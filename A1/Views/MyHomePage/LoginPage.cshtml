@@ -1,0 +1,49 @@
+﻿@{
+	ViewData["Title"] = "LoginPage";
+	Layout = "Login_Layout";
+}
+
+<div class="login_header">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+
+<form action="~/MyHomePage/LoginPage" method="post">
+	<div class="login_main">
+		<div class="login_box">
+			<h1>Login</h1>
+
+			<div class="login_context">
+				<h3>Have an account?<a class="sg" asp-area="" asp-controller="MyHomePage" asp-action="SignUpPage">SIGN UP</a></h3>
+				<div class="imp">
+					<input type="text" placeholder="Gmail" name="Email" />
+				</div>
+				<div class="imp">
+					<input type="password" placeholder="Password" maxlength="6" name="Password" />
+				</div>
+				<button type="submit" class="login_bt">SIGN IN</button>
+			</div>
+
+			<div class="radio">
+				@*<input id="check" type="checkbox">
+					<label for="check">Remember Me</label>*@
+				<a asp-area="" asp-controller="MyHomePage" asp-action="Index"><p class="b_h">Back To Home</p></a>
+				<a asp-area="" asp-controller="MyHomePage" asp-action="ForgetPassword"><p class="fg">Forgot Password</p></a>
+			</div>
+
+			@*<div class="other">
+				<p>— Or Sign In With —</p>
+				<div class="icon">
+				lass="ic">Facebook</button>
+				n class="ic">Twitter</button>
+				</div>
+				</div>*@
+		</div>
+	</div>
+</form>
+
+
+

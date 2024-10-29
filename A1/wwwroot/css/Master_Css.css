@@ -1,0 +1,1845 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #090b21;
+}
+
+:root {
+    --cc: #222327;
+}
+
+.move {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 200px;*/
+}
+
+.box {
+    position: fixed;
+    width: 400px;
+    height: 70px;
+    bottom: 5px;
+    /*right: 200px;*/
+    background: #2f363e;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    border-radius: 10px;
+}
+
+    .box ul {
+        display: flex;
+        position: relative;
+        width: 350px;
+    }
+
+        .box ul li {
+            list-style: none;
+            width: 70px;
+            height: 70px;
+            position: relative;
+            z-index: 1;
+        }
+
+            .box ul li a {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+                .box ul li a .icon {
+                    font-size: 1.5em;
+                    display: block;
+                    position: relative;
+                    line-height: 70px;
+                    color: white;
+                    transition: all 0.5s;
+                }
+
+            .box ul li.active a .icon {
+                transform: translateY(-32px);
+                color: #222327;
+            }
+
+            .box ul li a .text {
+                color: white;
+                position: absolute;
+                transition: all 0.5s;
+                transform: translateY(20px);
+                letter-spacing: 0.05px;
+                opacity: 0;
+            }
+
+            .box ul li.active a .text {
+                opacity: 1;
+                transform: translateY(10px);
+            }
+
+.info {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #00ff55;
+    top: -50%;
+    border-radius: 50%;
+    border: 6px solid rgba(0,0,0,0.68);
+}
+
+    .info::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        left: -22px;
+        border-top-right-radius: 20px;
+        box-shadow: rgba(0,0,0,0.68);
+    }
+
+    .info::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        right: -22px;
+        border-top-left-radius: 20px;
+        box-shadow: rgba(0,0,0,0.68);
+    }
+
+.box ul li:nth-child(1).active ~ .info {
+    transform: translateX(calc(70px * 0));
+}
+
+.box ul li:nth-child(2).active ~ .info {
+    transform: translateX(calc(70px * 1));
+}
+
+.box ul li:nth-child(3).active ~ .info {
+    transform: translateX(calc(70px * 2));
+}
+
+.box ul li:nth-child(4).active ~ .info {
+    transform: translateX(calc(70px * 3));
+}
+
+.box ul li:nth-child(5).active ~ .info {
+    transform: translateX(calc(70px * 4));
+}
+
+
+.mas_header {
+    position: relative;
+    user-select: none;
+}
+
+    .mas_header img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .mas_header div {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+
+.bp {
+    background: url(../Img/back1.png) no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.mas_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0,0,0,0.68);
+    user-select: none;
+}
+
+    .mas_main .mas_box {
+        width: 70rem;
+        height: 500px;
+        background: rgba(255,255,255,0.55);
+        margin-top: -6rem;
+        border-radius: 10px;
+    }
+
+form .add_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0,0,0,0.68);
+    user-select: none;
+}
+
+    form .add_main .add_box {
+        width: 70rem;
+        height: 500px;
+        background: rgba(255,255,255,0.55);
+        margin-top: -6rem;
+        border-radius: 10px;
+    }
+
+        form .add_main .add_box .container {
+            padding: 2rem;
+        }
+
+            form .add_main .add_box .container .icon {
+                position: relative;
+            }
+
+                form .add_main .add_box .container .icon i {
+                    font-size: 17rem;
+                    position: absolute;
+                    display: flex;
+                    margin-left: 43rem;
+                    margin-top: 4rem;
+                    border-radius: 10px;
+                    padding: 10px 10px;
+                    background: lightgreen;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.4s;
+                    border: none;
+                    outline: none;
+                }
+
+                form .add_main .add_box .container .icon:hover i {
+                    box-shadow: 0 0 20px chartreuse, 0 0 60px chartreuse;
+                    color: black;
+                    border: none;
+                    outline: none;
+                }
+
+            form .add_main .add_box .container .icon {
+                position: relative;
+            }
+
+                form .add_main .add_box .container .icon i {
+                    font-size: 17rem;
+                    position: absolute;
+                    display: flex;
+                    margin-left: 43rem;
+                    margin-top: 4rem;
+                    border-radius: 10px;
+                    padding: 10px 10px;
+                    background: lightgreen;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.4s;
+                    border: none;
+                    outline: none;
+                }
+
+
+
+                form .add_main .add_box .container .icon:hover i {
+                    box-shadow: 0 0 20px chartreuse, 0 0 60px chartreuse;
+                    color: black;
+                    border: none;
+                    outline: none;
+                }
+
+            form .add_main .add_box .container label {
+                font-size: 2rem;
+                font-weight: bolder;
+                margin-right: 1.5rem;
+            }
+
+            form .add_main .add_box .container .b2 {
+                margin-right: 2.4rem;
+            }
+
+            form .add_main .add_box .container .b3 {
+                margin-right: 6.1rem;
+            }
+
+            form .add_main .add_box .container .b4 {
+                margin-right: 3.9rem;
+            }
+
+            form .add_main .add_box .container select {
+                padding: 10px 15px;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                border: none;
+                border-radius: 10px;
+            }
+
+            form .add_main .add_box .container .s1 {
+                margin-right: 1.5rem;
+            }
+
+            form .add_main .add_box .container .bbtt {
+                margin-left: 61rem;
+                margin-top: 1.5rem;
+                padding: 10px 15px;
+                width: 100px;
+                font-weight: 600;
+                background: aquamarine;
+                transition: all 0.2s;
+            }
+
+                form .add_main .add_box .container .bbtt:hover {
+                    box-shadow: 0 0 20px aquamarine, 0 0 60px aquamarine;
+                    color: lightcoral;
+                }
+
+            form .add_main .add_box .container input {
+                padding: 10px 15px;
+                border: none;
+                border-radius: 20px;
+                width: 300px;
+                margin-bottom: 2rem;
+            }
+
+form .pro_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0,0,0,0.68);
+    user-select: none;
+}
+
+    form .pro_main .pro_box {
+        width: 70rem;
+        height: 500px;
+        background: rgba(255,255,255,0.55);
+        margin-top: -6rem;
+        border-radius: 10px;
+    }
+
+        form .pro_main .pro_box .container {
+            padding: 2rem;
+        }
+
+            form .pro_main .pro_box .container .icon {
+                position: relative;
+            }
+
+                form .pro_main .pro_box .container .icon i {
+                    font-size: 17rem;
+                    position: absolute;
+                    display: flex;
+                    margin-left: 43rem;
+                    margin-top: 4rem;
+                    border-radius: 10px;
+                    padding: 10px 10px;
+                    background: lightgreen;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.4s;
+                    border: none;
+                    outline: none;
+                }
+
+                form .pro_main .pro_box .container .icon:hover i {
+                    box-shadow: 0 0 20px chartreuse, 0 0 60px chartreuse;
+                    color: black;
+                    border: none;
+                    outline: none;
+                }
+
+            form .pro_main .pro_box .container .icon {
+                position: relative;
+            }
+
+                form .pro_main .pro_box .container .icon i {
+                    font-size: 17rem;
+                    position: absolute;
+                    display: flex;
+                    margin-left: 43rem;
+                    margin-top: 4rem;
+                    border-radius: 10px;
+                    padding: 10px 10px;
+                    background: aqua;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.4s;
+                    border: none;
+                    outline: none;
+                }
+
+                form .pro_main .pro_box .container .icon:hover i {
+                    box-shadow: 0 0 20px darkturquoise, 0 0 60px darkturquoise;
+                    color: black;
+                    border: none;
+                    outline: none;
+                }
+
+            form .pro_main .pro_box .container label {
+                font-size: 1.8rem;
+                font-weight: bolder;
+                margin-right: 1.5rem;
+            }
+
+            form .pro_main .pro_box .container .b1 {
+                margin-right: 4.3rem;
+            }
+
+            form .pro_main .pro_box .container .b2 {
+                margin-right: 3.4rem;
+            }
+
+            form .pro_main .pro_box .container .b3 {
+                margin-right: 6.1rem;
+            }
+
+            form .pro_main .pro_box .container .b4 {
+                margin-right: 5.4rem;
+            }
+
+            form .pro_main .pro_box .container .b5 {
+                margin-right: 2.5rem;
+            }
+
+            form .pro_main .pro_box .container .b6 {
+                margin-right: 2.1rem;
+            }
+
+            form .pro_main .pro_box .container .hz {
+                width: 100px;
+                margin-right: 1rem;
+            }
+
+            form .pro_main .pro_box .container select {
+                padding: 10px 15px;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                border: none;
+                border-radius: 10px;
+            }
+
+            form .pro_main .pro_box .container .s1 {
+                margin-right: 1.5rem;
+            }
+
+            form .pro_main .pro_box .container .bbtt {
+                margin-left: 61rem;
+                margin-top: 1.5rem;
+                padding: 10px 15px;
+                width: 100px;
+                font-weight: 600;
+                background: aquamarine;
+                transition: all 0.2s;
+            }
+
+                form .pro_main .pro_box .container .bbtt:hover {
+                    box-shadow: 0 0 20px aquamarine, 0 0 60px aquamarine;
+                    color: lightcoral;
+                }
+
+            form .pro_main .pro_box .container input {
+                padding: 10px 15px;
+                border: none;
+                border-radius: 20px;
+                width: 300px;
+                margin-bottom: 0.7rem;
+            }
+
+.mas_main .mas_box .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+    .mas_main .mas_box .container .left {
+        flex: 10%;
+    }
+
+    .mas_main .mas_box .container .right {
+        flex: 60%;
+        padding: 2.5rem;
+    }
+
+    .mas_main .mas_box .container .left2 {
+        flex: 50%;
+        text-align: center;
+        line-height: 340px;
+        padding: 2rem;
+    }
+
+        .mas_main .mas_box .container .left2 a {
+            padding: 15px 20px;
+            font-size: 3rem;
+            color: white;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background: lightgreen;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+            .mas_main .mas_box .container .left2 a:hover {
+                box-shadow: 0 0 20px chartreuse, 0 0 60px chartreuse;
+                color: black;
+            }
+
+            .mas_main .mas_box .container .left2 a i {
+                padding-right: 2rem;
+            }
+
+    .mas_main .mas_box .container .right2 {
+        flex: 50%;
+        text-align: center;
+        line-height: 340px;
+        padding: 2rem;
+    }
+
+        .mas_main .mas_box .container .right2 a:hover {
+            box-shadow: 0 0 20px darkturquoise, 0 0 60px darkturquoise;
+            color: black;
+        }
+
+        .mas_main .mas_box .container .right2 a {
+            padding: 15px 20px;
+            font-size: 3rem;
+            color: white;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background: aqua;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+            .mas_main .mas_box .container .right2 a i {
+                padding-right: 2rem;
+            }
+
+    .mas_main .mas_box .container .left .img img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-top: 4rem;
+    }
+
+    .mas_main .mas_box .container .right .my {
+        text-align: center;
+    }
+
+        .mas_main .mas_box .container .right .my .header hr {
+            color: black;
+            margin: 1rem 0;
+            border: 1px solid black;
+        }
+
+        .mas_main .mas_box .container .right .my .main {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        .mas_main .mas_box .container .right .my .main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .mas_main .mas_box .container .right .my .main .main_box1,
+            .mas_main .mas_box .container .right .my .main .main_box2,
+            .mas_main .mas_box .container .right .my .main .main_box3 {
+                padding: 1rem;
+                border: none;
+                border-radius: 10px;
+                background: #8e44ad;
+                color: white;
+                width: 210px;
+                height: 300px;
+                transition: all 0.3s;
+            }
+
+                .mas_main .mas_box .container .right .my .main .main_box1:hover {
+                    box-shadow: 0 0 20px #86139a, 0 0 60px #86139a;
+                    color: black;
+                }
+
+                .mas_main .mas_box .container .right .my .main .main_box2:hover {
+                    box-shadow: 0 0 20px #078313, 0 0 60px #078313;
+                    color: black;
+                }
+
+                .mas_main .mas_box .container .right .my .main .main_box3:hover {
+                    box-shadow: 0 0 20px #054da5, 0 0 60px #054da5;
+                    color: black;
+                }
+
+            .mas_main .mas_box .container .right .my .main .m1 {
+                background: #ab47bc;
+            }
+
+            .mas_main .mas_box .container .right .my .main .m2 {
+                background: #9FCC2E;
+                text-align: center;
+            }
+
+                .mas_main .mas_box .container .right .my .main .m2 .block {
+                    margin-right: 3rem;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            .mas_main .mas_box .container .right .my .main .m3 {
+                background: #0dcaf0;
+            }
+
+            .mas_main .mas_box .container .right .my .main .main_box1 .p1,
+            .mas_main .mas_box .container .right .my .main .main_box2 .p1,
+            .mas_main .mas_box .container .right .my .main .main_box3 .p1 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+                .mas_main .mas_box .container .right .my .main .main_box1 .p1 i,
+                .mas_main .mas_box .container .right .my .main .main_box2 .p1 i,
+                .mas_main .mas_box .container .right .my .main .main_box3 .p1 i {
+                    padding-right: 0.8rem;
+                    font-size: 1.2rem;
+                }
+
+            .mas_main .mas_box .container .right .my .main .main_box1 .p2,
+            .mas_main .mas_box .container .right .my .main .main_box2 .p2,
+            .mas_main .mas_box .container .right .my .main .main_box3 .p2 {
+                font-size: 0.8rem;
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .mas_main .mas_box .container .right .my .main .main_box1 .p2 span,
+                .mas_main .mas_box .container .right .my .main .main_box2 .p2 span,
+                .mas_main .mas_box .container .right .my .main .main_box3 .p2 span {
+                    color: rgb(238, 233, 233);
+                    transition: all 0.3s;
+                }
+
+            .mas_main .mas_box .container .right .my .main .main_box1:hover .p2 span,
+            .mas_main .mas_box .container .right .my .main .main_box2:hover .p2 span,
+            .mas_main .mas_box .container .right .my .main .main_box3:hover .p2 span {
+                color: black;
+            }
+
+.flex_box {
+    display: flex;
+    user-select: none;
+}
+
+    .flex_box .left {
+        flex: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+
+    .flex_box .right {
+        flex: 25%;
+    }
+
+        .flex_box .right .right_box {
+            background: rgba(255,255,255,0.1);
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+            width: 100%;
+            padding-bottom: 5rem;
+            z-index: 100;
+            border-top: 2px solid black;
+        }
+
+            .flex_box .right .right_box .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .flex_box .right .right_box .icon i {
+                    padding: 2rem;
+                    font-size: 5rem;
+                    color: gold;
+                }
+
+            .flex_box .right .right_box .rank {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 4rem;
+                margin-bottom: 1rem;
+            }
+
+
+                .flex_box .right .right_box .rank span {
+                    font-size: 1rem;
+                    color: white;
+                }
+
+                .flex_box .right .right_box .rank hr {
+                    margin-bottom: 1rem;
+                }
+
+                .flex_box .right .right_box .rank .s1 i {
+                    font-size: 1.5rem;
+                }
+
+    .flex_box .left .f_box .ct,
+    .flex_box .left .fp_box .ct {
+        font-weight: 300;
+        font-size: 0.9rem;
+        padding-top: 0.3rem;
+    }
+
+    .flex_box .left .f_box a img {
+        width: 150px;
+        margin: 0.5rem;
+        border-radius: 50%;
+    }
+
+    .flex_box .left .f_box,
+    .flex_box .left .fp_box {
+        transition: all 0.4s;
+    }
+
+        .flex_box .left .f_box:hover,
+        .flex_box .left .fp_box:hover {
+            background: #2f363e;
+            box-shadow: 0 0 20px rgb(102, 187, 226), 0 0 60px rgb(102, 187, 226);
+            color: white;
+        }
+
+            .flex_box .left .f_box:hover h6,
+            .flex_box .left .fp_box:hover h6 {
+                color: white;
+            }
+
+            .flex_box .left .f_box:hover .spa,
+            .flex_box .left .fp_box:hover .spa {
+                color: yellow;
+            }
+
+        .flex_box .left .f_box a,
+        .flex_box .left .fp_box a {
+            text-decoration: none;
+            color: black;
+        }
+
+            .flex_box .left .fp_box a img {
+                width: 160px;
+                margin: 0.2rem;
+                border-radius: 5px
+            }
+
+
+        .flex_box .left .f_box .ct,
+        .flex_box .left .fp_box .ct {
+            font-weight: 600;
+            font-size: 2rem;
+            padding-top: 0.3rem;
+            color: white;
+        }
+
+        .flex_box .left .f_box .cs,
+        .flex_box .left .fp_box .cs {
+            font-size: 2rem;
+        }
+
+            .flex_box .left .fp_box .cs h6 {
+                margin-bottom: 0.7rem;
+                font-size: 1.5rem;
+            }
+
+    .flex_box .left .fp_box {
+        border-radius: 10px;
+        margin: 1rem 2rem;
+        text-align: center;
+        background: white;
+        cursor: pointer;
+        padding: 1rem;
+        width: 300px;
+        display: block;
+        height: 330px;
+    }
+
+    .flex_box .left .f_box {
+        border-radius: 10px;
+        margin: 1rem 2rem;
+        text-align: center;
+        background: white;
+        cursor: pointer;
+        padding: 1rem;
+        width: 200px;
+        display: block;
+        height: 300px;
+    }
+
+    .flex_box h5 {
+        font-size: 2rem;
+        transition: all 0.4s;
+    }
+
+    .flex_box .spa {
+        font-size: 1.3rem;
+        color: crimson;
+        margin-right: 0.5rem;
+        transition: all 0.4s;
+    }
+
+
+.mas_main .mas_box .container .right .my .c_main {
+    margin: 2rem;
+    width: 38rem;
+    height: 300px;
+    background: rgba(0,0,0,0.55);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+    .mas_main .mas_box .container .right .my .c_main span {
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    .mas_main .mas_box .container .right .my .c_main p {
+        margin-bottom: 0.1rem;
+    }
+
+.mas_main .mas_box .container .right .my .c_enter p {
+    margin-bottom: 0.5rem;
+}
+
+.mas_main .mas_box .container .right .my .c_main i {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    color: lightcoral;
+    font-size: 1.7rem;
+}
+
+.mas_main .mas_box .container .left .bbtt {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+    .mas_main .mas_box .container .left .bbtt .u_btn {
+        padding: 10px 15px;
+        border-radius: 20px;
+        background: lightcoral;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .mas_main .mas_box .container .left .bbtt a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .mas_main .mas_box .container .left .bbtt .u_btn:hover {
+        box-shadow: 0 0 20px rgb(236, 84, 84), 0 0 60px rgb(236, 84, 84);
+        color: white;
+    }
+
+.mas_main .mas_box .container .right .my .c_main input {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.mas_main .mas_box .container .right .my .c_main select {
+    border-radius: 10px;
+}
+
+.mas_main .mas_box .container .left .e_btn {
+    margin-left: 6.4rem;
+    margin-top: 1rem;
+}
+
+
+    .mas_main .mas_box .container .left .e_btn .e_bbtt {
+        padding: 10px 25px;
+        border-radius: 13px;
+        background: lightgreen;
+        transition: all 0.3s;
+    }
+
+        .mas_main .mas_box .container .left .e_btn .e_bbtt:hover {
+            box-shadow: 0 0 20px rgb(236, 84, 84), 0 0 60px rgb(236, 84, 84);
+        }
+
+
+.p_header {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 20px black, 0 0 60px black;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 423px;
+    z-index: -100000;*/
+}
+
+
+    .p_header .search2 {
+        padding: 10px 15px;
+        border: none;
+        color: black;
+        border-bottom: 2px solid black;
+        background: transparent;
+        font-size: 1rem;
+        outline: none;
+    }
+
+        .p_header .search2:focus {
+            background: transparent;
+            outline: none;
+        }
+
+
+
+    .p_header .bbtt {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        margin-left: 1rem;
+        transition: all 0.2s;
+    }
+
+        .p_header .bbtt:hover {
+            color: white;
+            background: indianred;
+        }
+
+/*=====================================*/
+
+.block {
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.b_box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 50%;
+    background-color: #292929;
+    box-shadow: 0 0 5px 3px #222121;
+}
+
+    .b_box::before {
+        position: absolute;
+        content: '';
+        width: calc(100% + 28px);
+        height: calc(100% + 28px);
+        border-radius: 50%;
+        border: 1px solid #353535;
+    }
+
+    .b_box .number span {
+        color: #e9e9e9;
+    }
+
+    .b_box .number .num {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .b_box .number .sub {
+        font-size: 20px;
+    }
+
+    .b_box .title {
+        font-size: 15px;
+        color: #9b9b9b;
+    }
+
+.dots {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 2s transform, 2s opacity ease;
+}
+
+    .dots::after {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        left: 50%;
+        border-radius: 50%;
+        background-color: #b7b5b5;
+        box-shadow: 0 0 5px 2px #585858;
+        transform: translateX(-50%);
+    }
+
+.svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    transform: rotate(-90deg);
+}
+
+.circle {
+    stroke: url(#gradientStyle);
+    stroke-width: 4px;
+    stroke-dasharray: 503;
+    stroke-dashoffset: 503;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transition: 2s stroke-dashoffset;
+}
+
+/*=====================================================*/
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-bottom: 6rem;
+    background: rgba(0,0,0,0.68);
+    user-select: none;
+}
+
+.registration_form {
+    background: #545871;
+    padding: 25px;
+    border-radius: 5px;
+    width: 500px;
+    margin-top: 2rem;
+}
+
+.mn {
+    background: #545871;
+    padding: 15px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.registration_form .title {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ebd0ce;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.registration_form .t1 {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ebd0ce;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.form_wrap {
+    margin-top: 5px;
+}
+
+.v {
+    margin-top: 15px;
+}
+
+.form_wrap .input_wrap {
+    margin-bottom: 15px;
+}
+
+    .form_wrap .input_wrap:last-child {
+        margin-bottom: 0;
+    }
+
+    .form_wrap .input_wrap label {
+        display: block;
+        margin-bottom: 3px;
+        color: #9597a6;
+    }
+
+    .form_wrap .input_wrap .pd,
+    .form_wrap .input_wrap .epd {
+        width: 165px;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #9597a6;
+        padding: 10px;
+        outline: none;
+    }
+
+.form_wrap .input_grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .form_wrap .input_grp input[type="text"] {
+        width: 165px;
+    }
+
+.form_wrap input[type="text"] {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #9597a6;
+    padding: 10px;
+    outline: none;
+}
+
+    .form_wrap input[type="text"]:focus {
+        border-color: #ebd0ce;
+    }
+
+.form_wrap ul {
+    background: #fff;
+    padding: 8px 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+    .form_wrap ul li:first-child {
+        margin-right: 15px;
+    }
+
+    .form_wrap ul li {
+        list-style: none;
+    }
+
+    .form_wrap ul .radio_wrap {
+        position: relative;
+        margin-bottom: 0;
+    }
+
+        .form_wrap ul .radio_wrap .input_radio {
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0;
+        }
+
+        .form_wrap ul .radio_wrap span {
+            display: inline-block;
+            font-size: 14px;
+            padding: 3px 20px;
+            border-radius: 3px;
+            color: #545871;
+        }
+
+.form_wrap .input_radio:checked ~ span {
+    background: #ebd0ce;
+}
+
+.form_wrap .submit_btn {
+    width: 100%;
+    background: #ebd0ce;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+    .form_wrap .submit_btn:hover {
+        background: #ffd5d2;
+    }
+
+
+@media screen and (max-width: 376px) {
+    .box {
+        position: fixed;
+        width: 355px;
+        height: 50px;
+        bottom: 5px;
+        right: 10px;
+    }
+
+        .box ul {
+            display: flex;
+            position: relative;
+            width: 370px;
+        }
+
+            .box ul li {
+                list-style: none;
+                width: 70px;
+                height: 70px;
+                position: relative;
+                z-index: 1;
+            }
+
+                .box ul li a {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                    .box ul li a .icon {
+                        font-size: 1em;
+                        display: block;
+                        position: relative;
+                        line-height: 60px;
+                        color: white;
+                        transition: all 0.5s;
+                    }
+
+                .box ul li.active a .icon {
+                    transform: translateY(-28px);
+                    color: #222327;
+                }
+
+                .box ul li a .text {
+                    color: white;
+                    position: absolute;
+                    transition: all 0.5s;
+                    transform: translateY(20px);
+                    letter-spacing: 0.05px;
+                    font-size: 0.5rem;
+                    opacity: 0;
+                }
+
+                .box ul li.active a .text {
+                    opacity: 1;
+                    transform: translateY(10px);
+                }
+
+    .mas_main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: rgba(0,0,0,0.68);
+        user-select: none;
+    }
+
+        .mas_main .mas_box {
+            width: 340px;
+            height: 1350px;
+            background: rgba(255,255,255,0.55);
+            margin-top: 56rem;
+            border-radius: 10px;
+        }
+
+        .mas_main .userinfor_box {
+            width: 340px;
+            height: 740px;
+            background: rgba(255,255,255,0.55);
+            margin-top: 10rem;
+            border-radius: 10px;
+        }
+
+        .mas_main .mas_box .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+            .mas_main .mas_box .container .left {
+                flex: 10%;
+            }
+
+                .mas_main .mas_box .container .left .img img {
+                    width: 150px;
+                    height: 150px;
+                    margin-left: 3.8rem;
+                }
+
+            .mas_main .mas_box .container .input_left .img img {
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+                margin-left: 5.4rem;
+            }
+
+            .mas_main .mas_box .container .leftproinfo .img img {
+                width: 150px;
+                height: 150px;
+                margin-left: 5rem;
+            }
+
+            .mas_main .mas_box .container .userinfor .img img,
+            .mas_main .mas_box .container .userEdit .img img {
+                width: 150px;
+                height: 150px;
+                margin-left: 5.5rem;
+            }
+
+            .mas_main .mas_box .container .right {
+                flex: 60%;
+                padding: 2.5rem;
+            }
+
+        .mas_main .mas_box .c4 .right {
+            flex: 60%;
+            padding: 0.5rem;
+        }
+
+        .mas_main .mas_box .container .left2 {
+            flex: 50%;
+            text-align: center;
+            line-height: 340px;
+            padding: 2rem;
+        }
+
+        .mas_main .mas_box .container .right .my .main {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        .mas_main .mas_box .container .right .my .main {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .mas_main .mas_box .container .right .my .main .main_box1,
+            .mas_main .mas_box .container .right .my .main .main_box2,
+            .mas_main .mas_box .container .right .my .main .main_box3 {
+                margin-bottom: 1rem;
+            }
+
+    .mas_header {
+        position: relative;
+        user-select: none;
+    }
+
+        .mas_header img {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 250vh;
+        }
+
+        .mas_header div {
+            position: absolute;
+            z-index: -1;
+            width: 375px;
+            height: 225vh;
+        }
+
+    .mas_header {
+        position: relative;
+        user-select: none;
+    }
+
+    .user img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 250vh;
+    }
+
+    .user div {
+        position: absolute;
+        z-index: -1;
+        width: 380px;
+        height: 100vh;
+    }
+
+    .editpd div {
+        position: absolute;
+        z-index: -1;
+        width: 375px;
+        height: 130vh;
+    }
+
+    .productinfo div {
+        position: absolute;
+        z-index: -1;
+        width: 375px;
+        height: 130vh;
+    }
+
+    .product_inp div {
+        position: absolute;
+        z-index: -1;
+        width: 375px;
+        height: 130vh;
+    }
+
+    .cv div {
+        position: absolute;
+        z-index: -1;
+        width: 375px;
+        height: 100vh;
+    }
+
+    .adduser div {
+        position: absolute;
+        z-index: -1;
+        width: 375px;
+        height: 100vh;
+    }
+
+    .last div {
+        position: absolute;
+        z-index: -1;
+        width: 375px;
+        height: 100vh;
+    }
+
+
+    /*/*=======================================================*/
+    .flex_box .right {
+        display: none;
+    }
+
+    .flex_box .left {
+        margin-bottom: 4rem;
+    }
+
+        .flex_box .left .f_box:hover h6,
+        .flex_box .left .fp_box:hover h6 {
+            color: white;
+        }
+
+        .flex_box .left .f_box:hover .spa,
+        .flex_box .left .fp_box:hover .spa {
+            color: yellow;
+        }
+
+        .flex_box .left .f_box a,
+        .flex_box .left .fp_box a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .flex_box .left .f_box .cs,
+        .flex_box .left .fp_box .cs {
+            font-size: 1.4rem;
+        }
+
+            .flex_box .left .fp_box .cs h6 {
+                margin-bottom: 0.7rem;
+                font-size: 0.6rem;
+            }
+
+    .flex_box .spa {
+        font-size: 0.8rem;
+        color: crimson;
+        margin-right: 0.5rem;
+    }
+
+    .flex_box .left .f_box {
+        margin: 1rem 1rem;
+        padding: 1rem;
+        width: 150px;
+        height: 200px;
+    }
+
+        .flex_box .left .f_box a img {
+            width: 80px;
+            margin: 0.5rem;
+            border-radius: 50%;
+        }
+
+    .flex_box .left .fp_box a img {
+        width: 100px;
+    }
+
+    .flex_box .left .f_box .ct,
+    .flex_box .left .fp_box .ct {
+        font-weight: 300;
+        font-size: 0.9rem;
+        padding-top: 0.3rem;
+    }
+
+    .flex_box .left .f_box:hover,
+    .flex_box .left .fp_box:hover {
+        background: #2f363e;
+        color: white;
+    }
+
+        .flex_box .left .f_box:hover h6,
+        .flex_box .left .fp_box:hover h6 {
+            color: white;
+        }
+
+        .flex_box .left .f_box:hover .spa,
+        .flex_box .left .fp_box:hover .spa {
+            color: yellow;
+        }
+
+    .flex_box .left .f_box a,
+    .flex_box .left .fp_box a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .flex_box .left .f_box .ct,
+    .flex_box .left .fp_box .ct {
+        font-weight: 600;
+        font-size: 2rem;
+        padding-top: 0.3rem;
+        color: white;
+    }
+
+
+    .flex_box .left .fp_box {
+        border-radius: 10px;
+        margin: 1rem 0.5rem;
+        text-align: center;
+        background: white;
+        cursor: pointer;
+        padding: 1rem;
+        width: 170px;
+        display: block;
+        height: 260px;
+    }
+
+
+    /*================================================*/
+
+    .mas_main .mas_box .container .right .my2 .c_main,
+    .mas_main .mas_box .container .right .my_edit .c_main,
+    .mas_main .mas_box .container .right .myproductifo .c_main,
+    .mas_main .mas_box .container .right .myproduct .c_main {
+        margin: 0rem;
+        margin-left: -0.4rem;
+        width: 20rem;
+        height: 250px;
+        background: rgba(0,0,0,0.55);
+        border-radius: 10px;
+        padding: 0.2rem;
+        text-align: left;
+        padding-top: 1rem;
+    }
+
+    .mas_main .mas_box .container .right .myproductifo .c_main {
+        height: 270px;
+    }
+
+    .mas_main .mas_box .container .right .myproduct .c_main {
+        height: 230px;
+    }
+
+    .mas_main .useredit_box {
+        height: 700px;
+        margin-top: 10rem;
+    }
+
+    .mas_main .product_info {
+        height: 700px;
+        margin-top: 10rem;
+    }
+
+    .mas_main .product_input {
+        height: 700px;
+        margin-top: 10rem;
+    }
+
+    .mas_main .mas_box .container .right .my_edit .c_enter {
+        height: 290px;
+    }
+
+    .mas_main .mas_box .container .right .my2 .header {
+        text-align: center;
+        /* margin-right: 0.1rem;*/
+    }
+
+    .mas_main .mas_box .c2,
+    .mas_main .mas_box .c3,
+    .mas_main .mas_box .c4 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+
+        .mas_main .mas_box .c2 .right {
+            flex: 60%;
+            padding: 0.5rem;
+        }
+
+        .mas_main .mas_box .c3 .right {
+            flex: 60%;
+            padding: 0rem;
+        }
+
+        .mas_main .mas_box .c4 .righ {
+            flex: 60%;
+            padding: 0rem;
+        }
+
+    .mas_main .mas_box .c3 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .mas_main .mas_box .c4 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main span,
+    .mas_main .mas_box .container .right .my_edit .c_main span,
+    .mas_main .mas_box .container .right .myproductifo .c_main span,
+    .mas_main .mas_box .container .right .myproduct .c_main span {
+        color: white;
+        font-size: 0.1rem;
+        font-weight: 700;
+    }
+
+    .mas_main .mas_box .container .left .bbtt {
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+        .mas_main .mas_box .container .left .bbtt .u_btn {
+            padding: 10px 15px;
+            border-radius: 20px;
+            background: lightcoral;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+
+
+    .mas_main .mas_box .container .right .my2 .c_enter p {
+        margin-bottom: 0.5rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main .m2 .s1,
+    .mas_main .mas_box .container .right .my_edit .c_main .m2 .s1 {
+        padding-right: 0.4rem;
+    }
+
+    .mas_main .mas_box .container .right .myproductifo .producticon .m6 .s1,
+    .mas_main .mas_box .container .right .myproduct .productinput .m6 .s1 {
+        padding-right: 1.7rem;
+    }
+
+    .mas_main .mas_box .container .right .myproductifo .producticon .m1 .s1,
+    .mas_main .mas_box .container .right .myproduct .productinput .m1 .s1 {
+        padding-right: 1.95rem;
+    }
+
+    .mas_main .mas_box .container .right .myproductifo .producticon .m2 .s1,
+    .mas_main .mas_box .container .right .myproduct .productinput .m2 .s1 {
+        padding-right: 1.2rem;
+    }
+
+    .mas_main .mas_box .container .right .myproductifo .producticon .m3 .s1,
+    .mas_main .mas_box .container .right .myproduct .productinput .m3 .s1 {
+        padding-right: 1.45rem;
+    }
+
+    .mas_main .mas_box .container .right .myproductifo .producticon .m4 .s1,
+    .mas_main .mas_box .container .right .myproduct .productinput .m4 .s1 {
+        padding-right: 1.55rem;
+    }
+
+    .mas_main .mas_box .container .right .myproductifo .producticon .m5 .s1,
+    .mas_main .mas_box .container .right .myproduct .productinput .m5 .s1 {
+        padding-right: 1.55rem;
+    }
+
+    .mas_main .mas_box .container .right .myproduct .productinput .m7 .s1 {
+        padding-right: 1.4rem;
+    }
+
+    .mas_main .mas_box .container .right .myproductifo .producticon p {
+        margin-bottom: 1rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main .m4 .s1,
+    .mas_main .mas_box .container .right .my_edit .c_main .m4 .s1 {
+        padding-right: 0.1rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main .m5 .s1,
+    .mas_main .mas_box .container .right .my_edit .c_main .m5 .s1 {
+        padding-right: 0.2rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main .m6 .s1,
+    .mas_main .mas_box .container .right .my_edit .c_main .m6 .s1 {
+        padding-right: 0.1rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main .m9 .s1,
+    .mas_main .mas_box .container .right .my_edit .c_main .m9 .s1 {
+        padding-right: 0.5rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main .m8 .s1,
+    .mas_main .mas_box .container .right .my_edit .c_main .m8 .s1 {
+        padding-right: -1rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main .m7 .s1 {
+        padding-right: 0.5rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main i,
+    .mas_main .mas_box .container .right .myproductifo .c_main i,
+    .mas_main .mas_box .container .right .myproduct .c_main i {
+        margin-right: 0.4rem;
+        margin-left: 0.3rem;
+        color: lightcoral;
+        font-size: 1rem;
+    }
+
+    .mas_main .mas_box .container .right .my2 .c_main .m8 i {
+        margin-left: 0.2rem;
+    }
+
+    .mas_main .mas_box .container .right .my_edit .c_main .m7 i {
+        margin-left: -0.1rem;
+    }
+
+
+    .mas_main .mas_box .container .right .my .c_main input {
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    .mas_main .mas_box .container .right .my .c_main select {
+        border-radius: 10px;
+    }
+
+    .mas_main .mas_box .container .left .e_btn {
+        margin-left: 7rem;
+        margin-top: 1rem;
+    }
+
+    .mas_main .mas_box .container .right .my .c_enter i {
+        margin-right: 0.3rem;
+        margin-left: 0rem;
+        color: lightcoral;
+        font-size: 1rem;
+    }
+
+
+
+
+
+    /*===========================================================*/
+
+    .mas_main .mas_box .cc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mas_main .ma_cc {
+        height: 300px;
+        margin-top: 1rem;
+    }
+
+    .mas_main .mas_box .container .left2 {
+        flex: 50%;
+        text-align: center;
+        line-height: 110px;
+        padding: 0.1rem;
+    }
+
+        .mas_main .mas_box .container .left2 a {
+            padding: 5px 20px;
+            font-size: 2rem;
+        }
+
+            .mas_main .mas_box .container .left2 a i {
+                padding-right: 1rem;
+            }
+
+    .mas_main .mas_box .container .right2 {
+        flex: 50%;
+        text-align: center;
+        line-height: 110px;
+        padding: 0.1rem;
+    }
+
+        .mas_main .mas_box .container .right2 a {
+            padding: 5px 20px;
+            font-size: 2rem;
+        }
+
+            .mas_main .mas_box .container .right2 a i {
+                padding-right: 1rem;
+            }
+
+
+    /*======================================================*/
+
+    .mn {
+        background: #545871;
+        padding: 15px;
+        border-radius: 5px;
+        width: 374px;
+        height: 100vh;
+        margin-top: 5rem;
+    }
+
+    .registration_form .title {
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #ebd0ce;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+
+    .registration_form .t1 {
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #ebd0ce;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+
+    .form_wrap {
+        margin-top: 5px;
+    }
+
+        .form_wrap .input_wrap ul li span {
+            font-size: 1px;
+            padding: 3px 10px;
+        }
+}

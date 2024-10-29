@@ -1,0 +1,989 @@
+﻿@model IEnumerable<Product>
+
+@{
+	ViewData["Title"] = "ProductPage";
+}
+
+@{
+	if (@ViewBag.background == "black")
+	{
+		ViewBag.a1 = "opt_black";
+		ViewBag.a2 = "li_black";
+		ViewBag.a3 = "pd2_black";
+		ViewBag.a4 = "title_black";
+		ViewBag.a5 = "search2_black";
+		ViewBag.a6 = "search2_bbtt_black";
+		ViewBag.a7 = "flex_box_black";
+		ViewBag.a8 = "gotop_black";
+	}
+}
+
+@if (@ViewBag.background == "black")
+{
+	<div class="@ViewBag.a1"></div>
+}
+
+<div class='opt'>
+
+	<div class="option">
+		<ul style="padding:0px;">
+			<li class="@ViewBag.a2 sel"><i class="fa-solid fa-border-all"></i>All</li>
+			<li class="@ViewBag.a2"><i class="fa-solid fa-mobile-screen-button"></i> Phone</li>
+			<li class="@ViewBag.a2"><i class="fa-solid fa-tv"></i> Television</li>
+			<li class="@ViewBag.a2"><i class="fa-solid fa-headphones-simple"></i> Earphone</li>
+			<li class="@ViewBag.a2"><i class="fa-solid fa-bicycle"></i> Bicycle</li>
+			<li class="@ViewBag.a2"><i class="fa-solid fa-laptop"></i> Computer</li>
+			<li class="@ViewBag.a2"><i class="fas fa-pizza-slice"></i> Pizza</li>
+			<li class="@ViewBag.a2"><i class="fa-brands fa-product-hunt"></i> Other Products</li>
+		</ul>
+	</div>
+
+	<div class="product_menu">
+		<div class="item" style="display:block">
+			<div class="product_show @ViewBag.a3">
+
+				<div class="title @ViewBag.a4">
+					<h3>All Product</h3>
+					<div class="search">
+						<div class="btn-group bbtt">
+							<button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								Action
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="~/MyHomePage/ProductPage?filterType=0">Normal</a></li>
+								<li><a class="dropdown-item" href="~/MyHomePage/ProductPage?filterType=1">OrderBy</a></li>
+								<li><a class="dropdown-item" href="~/MyHomePage/ProductPage?filterType=2">Order By Descending</a></li>
+							</ul>
+						</div>
+
+						<form action="~/MyHomePage/ProductPage" method="post">
+							<input class="search2 @ViewBag.a5" type="text" placeholder="search..." name="search" />
+							<button type="submit" class="btn btn-outline-dark @ViewBag.a6"><i class="fas fa-search"></i></button>
+						</form>
+
+					</div>
+				</div>
+
+				<section class="flex_box @ViewBag.a7">
+					@foreach (var i in Model)
+					{
+						<div class="f_box all">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img class="allimg" src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p style="font-size:1.2rem;"><span class="blo" style="font-size:1.4rem;color:red;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.2rem;"><span class="blo" style="font-size:1.4rem;color:red;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+			</div>
+
+			<div class="gotop @ViewBag.a8" id="gotop"><i class="fa-solid fa-arrow-up"></i></div>
+
+		</div>
+
+		<div class="item">
+			<div class="product_show @ViewBag.a3">
+
+				<div class="title @ViewBag.a4">
+					<h3>cell phone</h3>
+				</div>
+
+				<div class="fl_box @ViewBag.a7">
+
+					<div class="left">
+						<img class="p2" src="~/Img/h1.webp" alt="" />
+					</div>
+
+					<div class="right">
+
+						@foreach (var i in Model.Where(x => x.Page == "Phoneone"))
+						{
+							<div class="insert_box">
+								<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+									<img src="~/@i.Img" alt="" />
+									<div class="cs">
+										<h5>@i.Name</h5>
+										<h6 class="ct">@i.Info</h6>
+										@if (i.Price == i.DelPrice)
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span></h6>
+										}
+										else
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+										}
+									</div>
+								</a>
+							</div>
+						}
+
+					</div>
+				</div>
+
+				<div class="tl_box @ViewBag.a7">
+					<div class="swiper mySwiper1">
+						<div class="swiper-wrapper">
+							@foreach (var i in Model.Where(x => x.Page == "Phonetwo"))
+							{
+								<div class="swiper-slide slide m1">
+									<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+										<img class="p2_img" src="~/@i.Img" alt="" />
+										<div class="cs">
+											<h5>
+												@i.Name
+											</h5>
+											<p class="ct">@i.Info</p>
+											@if (i.Price == i.DelPrice)
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+											}
+											else
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+											}
+										</div>
+									</a>
+								</div>
+							}
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<section class="flex_box @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "Phonethree" || x.Page == "Homeright"))
+					{
+						<div class="f_box mn">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img class="m_img" src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+			</div>
+		</div>
+		<div class="item">
+			<div class="product_show @ViewBag.a3">
+
+				<div class="title @ViewBag.a4">
+					<h3>Television</h3>
+				</div>
+
+				<div class="fl_box @ViewBag.a7">
+
+					<div class="left">
+						<img src="~/Img/tv/1.webp" alt="" />
+					</div>
+
+					<div class="right">
+
+						@foreach (var i in Model.Where(x => x.Page == "TVone"))
+						{
+							<div class="insert_box">
+								<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+									<img src="~/@i.Img" alt="" />
+									<div class="cs">
+										<h5>@i.Name</h5>
+										<h6 class="ct">@i.Info</h6>
+										@if (i.Price == i.DelPrice)
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span></h6>
+										}
+										else
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+										}
+									</div>
+								</a>
+							</div>
+						}
+
+					</div>
+				</div>
+
+				<div class="tl_box @ViewBag.a7">
+					<div class="swiper mySwiper1">
+						<div class="swiper-wrapper">
+							@foreach (var i in Model.Where(x => x.Page == "TVtwo"))
+							{
+								<div class="swiper-slide slide mm">
+									<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+										<img class="m_img3" src="~/@i.Img" alt="" />
+										<div class="cs">
+											<h5>
+												@i.Name
+											</h5>
+											<p class="ct">@i.Info</p>
+											@if (i.Price == i.DelPrice)
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+											}
+											else
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+											}
+										</div>
+									</a>
+								</div>
+							}
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<section class="flex_box @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "TVthree"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img class="m_img2" src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+			</div>
+		</div>
+		<div class="item">
+			<div class="product_show @ViewBag.a3">
+
+				<div class="title @ViewBag.a4">
+					<h3>Earphone</h3>
+				</div>
+				<div class="Earphone" style="margin:10px auto;width:1400px;">
+					<img src="~/Img/ej/e1.jpg" alt="" style="width:100%;margin:auto;margin-bottom:1rem;border-radius:10px;" />
+				</div>
+
+
+				<div class="fl_box @ViewBag.a7" style="margin-bottom:2rem;">
+
+					<div class="right nb2" style="width:100%;margin-bottom:2rem;">
+
+						@foreach (var i in Model.Where(x => x.Page == "Eone"))
+						{
+							<div class="insert_box nb">
+								<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+									<img class="m_img4" src="~/@i.Img" alt="" />
+									<div class="cs">
+										<h5 style="font-size: 1rem;">@i.Name</h5>
+										<h6 class="ct">@i.Info</h6>
+										@if (i.Price == i.DelPrice)
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span></h6>
+										}
+										else
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+										}
+									</div>
+								</a>
+							</div>
+						}
+
+					</div>
+				</div>
+
+				<div class="tl_box t_my @ViewBag.a7">
+					<div class="swiper mySwiper1">
+						<div class="swiper-wrapper">
+
+							@foreach (var i in Model.Where(x => x.Page == "Etwo"))
+							{
+								<div class="swiper-slide slide t_m2">
+									<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+										<img src="~/@i.Img" alt="" />
+										<div class="cs">
+											<h5>
+												@i.Name
+											</h5>
+											<p class="ct">@i.Info</p>
+											@if (i.Price == i.DelPrice)
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+											}
+											else
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+											}
+										</div>
+									</a>
+								</div>
+							}
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<div class="Earphone" style="margin:10px auto;width:1400px;">
+					<img src="~/Img/ej/e2.jpg" alt="" style="width:100%;margin:auto;margin-bottom:1rem;border-radius:10px;" />
+				</div>
+
+				<section class="flex_box @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "Ethree"))
+					{
+						<div class="f_box bn @ViewBag.a7">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+			</div>
+		</div>
+		<div class="item">
+			<div class="product_show mysa @ViewBag.a3">
+
+				<div class="title @ViewBag.a4">
+					<h3>Bicycle</h3>
+				</div>
+
+				<div class="Bicycle" style="margin:10px auto;width:700px;">
+					<img src="~/Img/jtc/g2.gif" alt="" style="width:100%;margin:auto;margin-bottom:1rem;border-radius:10px;" />
+				</div>
+
+				<section class="flex_box bsk @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "Jone"))
+					{
+						<div class="insert_box my3">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>@i.Name</h5>
+									<h6 class="ct">@i.Info</h6>
+									@if (i.Price == i.DelPrice)
+									{
+										<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span></h6>
+									}
+									else
+									{
+										<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+			</div>
+		</div>
+		<div class="item">
+			<div class="product_show @ViewBag.a3">
+
+				<div class="title @ViewBag.a4">
+					<h3>Computer</h3>
+				</div>
+
+				<div class="Computer" style="margin:10px auto;width:1000px;">
+					<img src="~/Img/computer/e1.jpg" alt="" style="width:100%;margin:auto;margin-bottom:1rem;border-radius:10px;" />
+				</div>
+
+				<div class="fl_box @ViewBag.a7" style="margin-bottom:3rem;">
+
+					<div class="right" style="width:100%;margin-bottom:3rem;">
+
+						@foreach (var i in Model.Where(x => x.Page == "Cone"))
+						{
+							<div class="insert_box mbb">
+								<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+									<img src="~/@i.Img" alt="" />
+									<div class="cs">
+										<h5>@i.Name</h5>
+										<h6 class="ct">@i.Info</h6>
+										@if (i.Price == i.DelPrice)
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span></h6>
+										}
+										else
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+										}
+									</div>
+								</a>
+							</div>
+						}
+
+					</div>
+				</div>
+
+				<div class="tl_box compu @ViewBag.a7">
+					<div class="swiper mySwiper1">
+						<div class="swiper-wrapper">
+
+							@foreach (var i in Model.Where(x => x.Page == "Ctwo"))
+							{
+								<div class="swiper-slide slide">
+									<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+										<img class="c_img" src="~/@i.Img" alt="" />
+										<div class="cs">
+											<h5>
+												@i.Name
+											</h5>
+											<p class="ct">@i.Info</p>
+											@if (i.Price == i.DelPrice)
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+											}
+											else
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+											}
+										</div>
+									</a>
+								</div>
+							}
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<div class="Computer" style="margin:10px auto;width:900px;">
+					<img src="~/Img/computer/e2.jpg" alt="" style="width:100%;margin:auto;margin-bottom:1rem;border-radius:10px;" />
+				</div>
+
+				<section class="flex_box @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "Cthree"))
+					{
+						<div class="f_box c_last">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+			</div>
+		</div>
+		<div class="item">
+			<div class="product_show @ViewBag.a3">
+
+				<div class="title pi_title @ViewBag.a4">
+					<h3>Pizza</h3>
+				</div>
+
+				<div class="pizza" style="margin:10px auto;width:1400px;">
+					<img src="~/Img/pizza/back1.png" alt="" style="width:100%;margin:auto;margin-bottom:1rem;border-radius:10px;" />
+				</div>
+
+
+				@*<div class="mide" style="display:flex;justify-content:center;width:100%;text-align:center;">
+					<img src="~/Img/pizza/e1.png" alt="" style="width:600px;" />
+					</div>*@
+				<div class="mide m3">
+					<img src="~/Img/pizza/e7.png" alt="" />
+				</div>
+
+				<section class="flex_box f1 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P1"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				<div class="mide" style="display:flex;justify-content:center;width:100%;text-align:center;">
+					<img src="~/Img/pizza/e2.png" alt="" style="width:600px;" />
+				</div>
+
+				<section class="flex_box f2 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P2"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				<div class="mide m1">
+					<img src="~/Img/pizza/e3.png" alt="" />
+				</div>
+
+				<section class="flex_box f3 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P3"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				<div class="mide" style="display:flex;justify-content:center;width:100%;text-align:center;">
+					<img src="~/Img/pizza/e4.png" alt="" style="width:600px;" />
+				</div>
+
+				<section class="flex_box f4 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P4"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				<div class="mide" style="display:flex;justify-content:center;width:100%;text-align:center;">
+					<img src="~/Img/pizza/e5.png" alt="" style="width:600px" />
+				</div>
+
+				<section class="flex_box f5 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P5"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				<div class="mide" style="display:flex;justify-content:center;width:100%;text-align:center;">
+					<img src="~/Img/pizza/e6.png" alt="" style="width:600px" />
+				</div>
+
+				<section class="flex_box f6 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P6"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				<div class="mide m3">
+					<img src="~/Img/pizza/e7.png" alt="" />
+				</div>
+
+				<section class="flex_box f7 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P7"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				@*<div class="mide m2">
+					<img src="~/Img/pizza/e8.png" alt="" />
+					</div>*@
+				<div class="mide m3">
+					<img src="~/Img/pizza/e7.png" alt="" />
+				</div>
+
+				<section class="flex_box f8 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P8"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				<div class="mide m4">
+					<img src="~/Img/pizza/e9.png" alt="" />
+				</div>
+
+				<section class="flex_box f9 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P9"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+				<div class="mide m5">
+					<img src="~/Img/pizza/e9.png" alt="" />
+				</div>
+
+				<section class="flex_box f10 @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "P10"))
+					{
+						<div class="f_box">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<p class="ct">@i.Info</p>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p style="font-size:1.5rem;"><span style="font-size:1.3rem;color:red;margin-right:0.5rem;">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+
+			</div>
+		</div>
+		<div class="item">
+			<div class="product_show @ViewBag.a3">
+
+				<div class="title @ViewBag.a4">
+					<h3>Other Products</h3>
+				</div>
+
+				<div class="fl_box @ViewBag.a7" style="margin-bottom:8rem;">
+
+					<div class="right oh" style="width:100%;margin-bottom:3rem;">
+
+						@foreach (var i in Model.Where(x => x.Page == "Oone"))
+						{
+							<div class="insert_box oth">
+								<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+									<img src="~/@i.Img" alt="" />
+									<div class="cs">
+										<h5>@i.Name</h5>
+										<h6 class="ct">@i.Info</h6>
+										@if (i.Price == i.DelPrice)
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span></h6>
+										}
+										else
+										{
+											<h6><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+										}
+									</div>
+								</a>
+							</div>
+						}
+
+					</div>
+				</div>
+
+				<div class="tl_box other_box @ViewBag.a7">
+					<div class="swiper mySwiper1">
+						<div class="swiper-wrapper">
+
+							@foreach (var i in Model.Where(x => x.Page == "Otwo"))
+							{
+								<div class="swiper-slide slide">
+									<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+										<img src="~/@i.Img" alt="" style="" />
+										<div class="cs">
+											<h5>
+												@i.Name
+											</h5>
+											<h6 class="ct">@i.Info</h6>
+											@if (i.Price == i.DelPrice)
+											{
+												<p><span class="spa">RM  @(i.Price.ToString("0.00")) </span></p>
+											}
+											else
+											{
+												<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+											}
+										</div>
+									</a>
+								</div>
+							}
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<section class="flex_box @ViewBag.a7">
+
+					@foreach (var i in Model.Where(x => x.Page == "Othree" || x.Page == "Hometwo" || x.Page == "Homethree"))
+					{
+						<div class="f_box other_last @ViewBag.a7">
+							<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+								<img src="~/@i.Img" alt="" />
+								<div class="cs">
+									<h5>
+										@i.Name
+									</h5>
+									<h6 class="ct">@i.Info</h6>
+									@if (i.Price == i.DelPrice)
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span></p>
+									}
+									else
+									{
+										<p><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></p>
+									}
+								</div>
+							</a>
+						</div>
+					}
+
+				</section>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById("product").style.background = "cornflowerblue"
+</script>

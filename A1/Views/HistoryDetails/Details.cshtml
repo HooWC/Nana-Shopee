@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Cart>
+@{
+	ViewData["Title"] = "Details";
+	Layout = "HistoryDetails_Layout";
+}
+
+<div class="logo">
+	<img src="~/Img/logo5.png" alt="" />
+</div>
+
+<hr />
+
+
+<div class="context">
+	<div class="text">
+		<p>Transfer to Other Account</p>
+		<p>Username : <span>@ViewBag.Username</span></p>
+		<p>Address : <span>@ViewBag.Address</span></p>
+		<p>Transaction ID : <span>@ViewBag.TrID</span></p>
+		<p>Transaction Date/Time : <span>@ViewBag.time</span></p>
+		<p>Freight : <span>RM 5.00</span></p>
+		<p>Tax : <span>RM @ViewBag.tax</span></p>
+		<p>Amount : <span>RM @ViewBag.Amount</span></p>
+		<p>Cart List ####</p>
+	</div>
+
+	<div class="box">
+		@foreach (var i in Model)
+		{
+			<div class="t_box">
+				<div class="img">
+					<img src="~/@i.Img" alt="" />
+				</div>
+				<div class="word">
+					<p class="name">@i.ProductName</p>
+					<p class="pID">@i.Product_ID</p>
+					<p class="price">RM @i.Product_Price</p>
+				</div>
+			</div>
+		}
+	</div>
+
+	<div class="btn">
+		<a class="b1" asp-controller="MyHomePage" asp-action="History" id="b1">Back</a>
+		<button class="b1 b2" onclick="loadPrint()" id="b2">Print</button>
+	</div>
+
+</div>
+
+@*<div class="footer_box">
+	<div class="footer_context">
+	<h4>Notes:</h4>
+	<p>1) You can choose to print to keep a record of your purchases.</p>
+	<p>2) Printing is recommended to avoid data loss.</p>
+	</div>
+	</div>*@
+
+
+
+
+
+<script>
+	function loadPrint() {
+		b1.style.display = "none";
+		b2.style.display = "none";
+		window.print();
+		b1.style.display = "block";
+		b2.style.display = "block";
+	}
+
+</script>

@@ -1,0 +1,214 @@
+﻿@model IEnumerable<User>
+
+@{
+	ViewData["Title"] = "MasterEditUser";
+	Layout = "Master_layout";
+}
+
+<div class="mas_header editpd">
+
+	<div class="bp ">
+	</div>
+
+</div>
+
+@foreach (var j in Model)
+{
+	<form action="~/MyHomePage/MasterEditUser?Uid=@j.Id" method="post">
+		<div class="mas_main">
+			<div class="mas_box useredit_box">
+				<div class="container c3">
+
+					<section class="left userEdit">
+
+						@foreach (var i in Model)
+						{
+							<div class="img">
+								<img src="~/Img/TX/@i.Hurl" alt="" />
+							</div>
+
+							<div class="e_btn">
+								<input id="submitbtn" type="submit" value="Submit" class="e_bbtt" disabled />
+							</div>
+						}
+					</section>
+
+					<section class="right">
+
+						@foreach (var i in Model)
+						{
+							<div class="my my_edit">
+								<div class="header">
+									<h1>Customer</h1>
+									<hr />
+								</div>
+
+								<div class="c_main c_enter">
+
+									<p>
+										<span class="s1" style="margin-right:2.5rem;">NAME</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="zname" onkeyup="Namebtn(this.value)" type="text" placeholder="Enter Name" maxlength="8" name="UserName" required>
+									</p>
+									<p class="m2">
+										<span class="s1">PASSWORD</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="zpassword" onkeyup="Passwordbtn(this.value)" type="password" placeholder="Password" maxlength="6" name="p1" required>
+									</p>
+									<p class="m3">
+										<span class="s1" style="margin-right:2.3rem;">GMAIL</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="zgmail" onkeyup="Gmailbtn(this.value)" type="email" placeholder="Your Gmail" name="Email" required>
+									</p>
+									<p class="m7">
+										<span class="s1" style="margin-right:3.3rem;">CITY</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<select name="City">
+											<option>George Town</option>
+											<option>Kuala Lumpur</option>
+											<option>Bandaraya Melaka</option>
+											<option>Johor Bahru</option>
+											<option>Petaling Jaya</option>
+										</select>
+									</p>
+									<p class="m4">
+										<span class="s1" style="margin-right:1.6rem;">GENDER</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<select name="Gender">
+											<option>MALE</option>
+											<option>FEMALE</option>
+										</select>
+									</p>
+									<p class="m5">
+										<span class="s1" style="margin-right:1.1rem;">ADDRESS</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="zadd" onkeyup="Addressbtn(this.value)" type="text" placeholder="Enter Address" name="Address" required>
+									</p>
+									<p class="m6">
+										<span class="s1" style="margin-right:1.9rem;">MONEY</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="zmoney" type="number" placeholder="Enter Money" name="Money" required>
+									</p>
+
+								</div>
+							</div>
+						}
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</form>
+}
+
+
+
+
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@ViewBag.Mas_id">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a href='#'>
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class='text'>Sign out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>
+
+
+<script>
+	function Checkbtn(va){
+		var name = document.getElementById("zname").value
+		var password = document.getElementById("zpassword").value
+		var address = document.getElementById("zadd").value
+		var gmail = document.getElementById("zgmail").value
+		var money = document.getElementById("zmoney").value
+		//  money少于 0
+		var checkMoney = va
+		console.log("cc" + checkMoney)
+		if(name == "" || password == "" ||  address == "" || gmail == "" || money == "" || checkMoney == "null"){
+			document.getElementById("submitbtn").disabled = true;
+		}else{
+			document.getElementById("submitbtn").disabled = false;
+		}
+	}
+
+	function Namebtn(n){
+		if(n.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Passwordbtn(n){
+		if(n.length == 6){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Gmailbtn(n){
+		if(n.indexOf("@@gmail.com") != -1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Addressbtn(n){
+		if(n.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	var money = document.getElementById("zmoney")
+	money.onkeyup = function(){
+		if(this.value >= 0){
+			document.getElementById("submitbtn").disabled = false;
+
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+			Checkbtn("null")
+		}
+	}
+
+
+
+</script>

@@ -1,0 +1,186 @@
+﻿@model IEnumerable<Product>
+
+@{
+	ViewData["Title"] = "MasterEditProduct";
+	Layout = "Master_layout";
+}
+
+<div class="mas_header product_inp">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+@foreach (var j in Model)
+{
+	<form action="~/MyHomePage/MasterEditProduct?Pid=@j.Id" method="post">
+		<div class="mas_main">
+			<div class="mas_box product_input">
+				<div class="container c4">
+
+					<section class="left input_left">
+
+						@foreach (var i in Model)
+						{
+							<div class="img">
+								<img src="~/@i.Img" alt="" />
+							</div>
+
+							<div class="e_btn">
+								<input id="submitbtn" type="submit" value="Submit" class="e_bbtt" disabled />
+							</div>
+						}
+					</section>
+
+					<section class="right">
+
+						@foreach (var i in Model)
+						{
+							<div class="my myproduct">
+								<div class="header">
+									<h1>Customer</h1>
+									<hr />
+								</div>
+
+								<div class="c_main productinput">
+									<p class="m6">
+										<span class="s1" style="margin-right:-0.3rem;">PRODUCT_ID</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<span class="s2">@i.Product_ID</span>
+									</p>
+									<p class="m1">
+										<span class="s1" style="margin-right:-1.8rem;">PRODUCTNAME</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="zzzname" type="text" placeholder="Enter Product Name" name="Name" required>
+									</p>
+									<p class="m2">
+										<span class="s1" style="margin-right:3rem;">PRICE</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="price" type="number" placeholder="Price" name="Price" required>
+									</p>
+									<p class="m3">
+										<span class="s1" style="margin-right:1.3rem;">DELPRICE</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="MydelPrice" type="number" placeholder="Enter DelPrice" name="DelPrice" required>
+									</p>
+									<p class="m5">
+										<span class="s1" style="margin-right:0.8rem;">QUANTITY</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<input id="quantity" type="number" placeholder="Enter Quantity" name="Quantity" required>
+									</p>
+									<p class="m7">
+										<span class="s1" style="margin-right:0.9rem;">CATEGORY</span>
+										<i class="fas fa-arrows-alt-h"></i>
+										<span class="s2">@i.Category</span>
+									</p>
+
+								</div>
+							</div>
+						}
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</form>
+}
+
+
+
+
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@ViewBag.Mas_id">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="AddPage">
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="settings-outline"></ion-icon></span>
+					<span class='text'>Sign Out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var Myname = document.getElementById("zzzname")
+	var quantity = document.getElementById("quantity")
+	var price = document.getElementById("price")
+	var MydelPrice = document.getElementById("MydelPrice")
+
+	function Checkbtn(){
+		var Myname = document.getElementById("zzzname").value
+		var quantity = document.getElementById("quantity").value
+		var price = document.getElementById("price").value
+		var MydelPrice = document.getElementById("MydelPrice").value
+		if(Myname == "" || quantity == "" ||  price == ""|| MydelPrice == "" || parseInt(price) > parseInt(MydelPrice)){
+			document.getElementById("submitbtn").disabled = true;
+		}else{
+
+			document.getElementById("submitbtn").disabled = false;
+		}
+	}
+
+	Myname.onkeyup = function(){
+		if(this.value.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	quantity.onkeyup = function(){
+		if(this.value >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	price.onkeyup = function(){
+		if(this.value >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	MydelPrice.onkeyup = function(){
+		var price2 = document.getElementById("price")
+		if(parseInt(this.value) >= parseInt(price2.value)){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+</script>

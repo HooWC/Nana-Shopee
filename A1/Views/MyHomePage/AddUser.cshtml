@@ -1,0 +1,222 @@
+﻿@{
+	ViewData["Title"] = "AddUser";
+	Layout = "Master_layout";
+}
+
+<div class="mas_header adduser">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+<div class="wrapper">
+	<div class="registration_form">
+		<div class="title">
+			Create Form
+		</div>
+
+		<form action="~/MyHomePage/AddUser" method="post">
+			<div class="form_wrap">
+				<div class="input_grp">
+					<div class="input_wrap">
+						<label for="fname">User Name</label>
+						<input id="zname" onkeyup="Namebtn(this.value)" type="text" name="UserName" placeholder="Enter Name" maxlength="8" required @*id="fname"*@>
+					</div>
+					<div class="input_wrap">
+						<label for="lname">Password</label>
+						<input id="zpassword" onkeyup="Passwordbtn(this.value)" class="pd" type="password" name="Password" placeholder="Enter Password" maxlength="6" required @*id="lname"*@>
+					</div>
+				</div>
+				<div class="input_wrap">
+					<label for="email">Email</label>
+					<input id="zgmail" onkeyup="Gmailbtn(this.value)" class="epd" type="email" name="Email" placeholder="Enter Email" required @*id="email"*@>
+				</div>
+				<div class="input_grp">
+					<div class="input_wrap">
+						<label for="email">Address</label>
+						<input id="zadd" onkeyup="Addressbtn(this.value)" type="text" name="Address" placeholder="Enter Address" required @*id="email"*@>
+					</div>
+					<div class="input_wrap">
+						<label for="fname">AddressZip</label>
+						<input id="zzip" onkeyup="Addresszipbtn(this.value)" type="text" name="AddressZip" placeholder="Eg. 13200" maxlength="5" required @*id="fname"*@>
+					</div>
+				</div>
+
+				<div class="input_wrap">
+					<label>City</label>
+					<ul>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="City" value="CUSTOMER" class="input_radio" checked>
+								<span>George Town</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="City" value="CUSTOMER" class="input_radio" checked>
+								<span>Kuala Lumpur</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="input_wrap">
+					<ul>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="City" value="CUSTOMER" class="input_radio" checked>
+								<span>Johor Bahru</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="City" value="CUSTOMER" class="input_radio" checked>
+								<span>Petaling Jaya</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="City" value="CUSTOMER" class="input_radio" checked>
+								<span>Bandaraya Melaka</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+
+				<div class="input_wrap">
+					<label>Gender</label>
+					<ul>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Gender" value="MALE" class="input_radio" checked>
+								<span>Male</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Gender" value="FEMALE" class="input_radio">
+								<span>Female</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="input_wrap">
+					<label>Role</label>
+					<ul>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Role" value="CUSTOMER" class="input_radio" checked>
+								<span>Customer</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="input_wrap">
+					<input id="submitbtn" type="submit" value="Create Now" class="submit_btn" disabled />
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@ViewBag.Mas_id">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li asp-controller="MyHomePage" asp-action="MasterProduct">
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="AddPage">
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class='text'>Sign Out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>
+
+
+<script>
+
+	function Checkbtn(){
+		var name = document.getElementById("zname").value
+		var password = document.getElementById("zpassword").value
+		var addresszip = document.getElementById("zzip").value
+		var address = document.getElementById("zadd").value
+		var gmail = document.getElementById("zgmail").value
+		if(name == "" || password == "" || addresszip == "" || address == "" || gmail == ""){
+			document.getElementById("submitbtn").disabled = true;
+		}else{
+			document.getElementById("submitbtn").disabled = false;
+		}
+	}
+
+	function Namebtn(n){
+		if(n.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Passwordbtn(n){
+		if(n.length == 6){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Gmailbtn(n){
+		if(n.indexOf("@@gmail.com") != -1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Addresszipbtn(n){
+		if(n.length == 5){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Addressbtn(n){
+		if(n.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+</script>

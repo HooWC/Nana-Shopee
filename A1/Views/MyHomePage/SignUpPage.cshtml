@@ -1,0 +1,158 @@
+﻿@model User
+
+@{
+	ViewData["Title"] = "SignUpPage";
+	Layout = "SignUp_Layout";
+}
+
+<div class="login_header">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+
+<form method="post">
+	<div class="login_main">
+		<div class="sign_box">
+
+			<div class="container mt-5text-white p-3 rounded-3 sg_container " style="margin:3.3rem auto;">
+
+				<div class="row">
+					<div class="col">
+						<h5>UserName</h5>
+						<input id="zname" onkeyup="Namebtn(this.value)" type="text" class="form-control" asp-for="UserName" placeholder="Enter Name" maxlength="8" name="UserName" required>
+					</div>
+					<div class="col">
+						<h5>Password</h5>
+						<input id="zpassword" onkeyup="Passwordbtn(this.value)" class="form-control" asp-for="Password" type="password" placeholder="Password" maxlength="6" name="p1" required>
+					</div>
+					<div class="col">
+						<h5>AddressZip</h5>
+						<input id="zzip" onkeyup="Addresszipbtn(this.value)" class="form-control" asp-for="AddressZip" type="text" placeholder="Eg. 13200" maxlength="5" name="AddressZip" required>
+					</div>
+				</div>
+
+				<br />
+
+				<h5>Enter Gmail</h5>
+				<div>
+					<input id="zgmail" onkeyup="Gmailbtn(this.value)" class="form-control" asp-for="Email" type="email" placeholder="Your Gmail" name="email" required>
+				</div>
+
+				<br />
+
+				<div class="mb-3 mt-3">
+					<h5>Address</h5>
+					<input id="zadd" onkeyup="Addressbtn(this.value)" class="form-control" asp-for="Address" type="text" placeholder="Enter Address" name="address" required>
+				</div>
+
+				<br />
+
+
+				<div class="row">
+					<div class="col-4">
+						<h5>Gender</h5>
+						<select class="form-select" name="Gender">
+							<option>MALE</option>
+							<option>FEMALE</option>
+						</select>
+					</div>
+
+					<div class="col-4">
+						<h5>Role</h5>
+						<select class="form-select" name="Role">
+							<option>CUSTOMER</option>
+						</select>
+					</div>
+
+					<div class="col-4">
+						<h5>City</h5>
+						<select class="form-select" name="City">
+							<option>George Town</option>
+							<option>Kuala Lumpur</option>
+							<option>Bandaraya Melaka</option>
+							<option>Johor Bahru</option>
+							<option>Petaling Jaya</option>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="container row sg">
+					<div class="col">
+						<a asp-area="" asp-controller="MyHomePage" asp-action="Index" class="btn btn-outline-info py-3 px-5">Back To Home</a>
+					</div>
+					<div class="col">
+						<button id="submitbtn" type="submit" class="btn btn-outline-info py-3 px-5 offset-md-8 sb_btn" disabled>Submit</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</form>
+
+<script>
+
+	function Checkbtn(){
+		var name = document.getElementById("zname").value
+		var password = document.getElementById("zpassword").value
+		var addresszip = document.getElementById("zzip").value
+		var address = document.getElementById("zadd").value
+		var gmail = document.getElementById("zgmail").value
+		if(name == "" || password == "" || addresszip == "" || address == "" || gmail == ""){
+			document.getElementById("submitbtn").disabled = true;
+		}else{
+			document.getElementById("submitbtn").disabled = false;
+		}
+	}
+
+	function Namebtn(n){
+		if(n.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Passwordbtn(n){
+		if(n.length == 6){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Gmailbtn(n){
+		if(n.indexOf("@@gmail.com") != -1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Addresszipbtn(n){
+		if(n.length == 5){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	function Addressbtn(n){
+		if(n.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+</script>

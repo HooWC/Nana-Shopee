@@ -1,0 +1,145 @@
+﻿@model IEnumerable<Master>
+
+@{
+	ViewData["Title"] = "MasterHome";
+	Layout = "Master_layout";
+}
+
+
+<div class="mas_header">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+<div class="mas_main">
+	<div class="mas_box">
+		<div class="container">
+
+			<section class="left">
+
+				@foreach (var i in Model)
+				{
+					<div class="img">
+						<img src="~/@i.Img" alt="" />
+					</div>
+				}
+			</section>
+
+
+			<section class="right">
+
+				@foreach (var i in Model)
+				{
+					<div class="my">
+						<div class="header">
+							<h1>Master</h1>
+							<hr />
+						</div>
+
+						<div class="main">
+							<div class="main_box1 m1">
+								<p class="p1"><i class="fa-solid fa-hand-holding-dollar"></i>Earnings</p>
+								<p class="p2"><span>Get</span>$@ViewBag.total</p>
+							</div>
+
+							<div class="main_box2 m2">
+								<p class="p1"><i class="fa-solid fa-users"></i>User</p>
+								<p class="p2"><span>Count</span>@ViewBag.ucount / 10000</p>
+
+
+								<div class="block">
+									<div class="b_box">
+										<p class="number">
+											<span class="num">@ViewBag.bqcount</span>
+											<span class="sub">%</span>
+										</p>
+										<p class="title">Count</p>
+									</div>
+									<span class="dots"></span>
+									<svg class="svg">
+										<defs>
+											<linearGradient id="gradientStyle">
+												<stop offset="0%" stop-color="#565656" />
+												<stop offset="100%" stop-color="#b7b5b5" />
+											</linearGradient>
+										</defs>
+										<circle class="circle" cx="90" cy="90" r="80" />
+									</svg>
+								</div>
+
+							</div>
+
+							<div class="main_box3 m3">
+								<p class="p1"><i class="fa-brands fa-product-hunt"></i>Product</p>
+								<p class="p2"><span>Count</span>@ViewBag.pcount / 10000</p>
+
+								<div class="block">
+									<div class="b_box">
+										<p class="number">
+											<span class="num">@ViewBag.bcount</span>
+											<span class="sub">%</span>
+										</p>
+										<p class="title">Count</p>
+									</div>
+									<span class="dots"></span>
+									<svg class="svg">
+										<defs>
+											<linearGradient id="gradientStyle">
+												<stop offset="0%" stop-color="#565656" />
+												<stop offset="100%" stop-color="#b7b5b5" />
+											</linearGradient>
+										</defs>
+										<circle class="circle" cx="90" cy="90" r="80" />
+									</svg>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				}
+
+			</section>
+
+		</div>
+	</div>
+</div>
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="MasterHome">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="AddPage">
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class='text'>Sign Out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>

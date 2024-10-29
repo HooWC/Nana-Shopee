@@ -1,0 +1,142 @@
+﻿@model IEnumerable<User>
+
+@{
+	ViewData["Title"] = "MasterInfoUser";
+	Layout = "Master_layout";
+}
+
+
+<div class="mas_header user">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+<div class="mas_main">
+	<div class="mas_box userinfor_box">
+		<div class="container c2">
+
+			<section class="left userinfor">
+
+				@foreach (var i in Model)
+				{
+					<div class="img">
+						<img src="~/Img/TX/@i.Hurl" alt="" />
+					</div>
+				}
+
+				@foreach (var i in Model)
+				{
+					<div class="bbtt">
+						<a asp-controller="MyHomePage" asp-action="MasterEditUser" asp-route-id="@i.Id" class="u_btn" style="margin-right: 1rem;">EDIT</a>
+						<a asp-controller="MyHomePage" asp-action="MasterDeleteUser" asp-route-id="@i.Id" class="u_btn">DELETE</a>
+					</div>
+				}
+			</section>
+
+
+			<section class="right">
+
+				@foreach (var i in Model)
+				{
+					<div class="my my2">
+						<div class="header">
+							<h1>Customer</h1>
+							<hr />
+						</div>
+
+						<div class="c_main">
+							<p class="m1">
+								<span class="s1" style="margin-right:2.5rem;">NAME</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.UserName</span>
+							</p>
+							<p class="m2">
+								<span class="s1">PASSWORD</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.Password</span>
+							</p>
+							<p class="m3">
+								<span class="s1" style="margin-right:2.3rem;">GMAIL</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.Email</span>
+							</p>
+							<p class="m4">
+								<span class="s1" style="margin-right:1.6rem;">GENDER</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.Gender</span>
+							</p>
+							<p class="m5">
+								<span class="s1" style="margin-right:1.1rem;">ADDRESS</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.Address</span>
+							</p>
+							<p class="m9">
+								<span class="s1" style="margin-right:-0.4rem;">ADDRESSZIP</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.AddressZip</span>
+							</p>
+							<p class="m8">
+								<span class="s1" style="margin-right:3.3rem;">CITY</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.City</span>
+							</p>
+							<p class="m6">
+								<span class="s1" style="margin-right:1.9rem;">MONEY</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">RM @i.Money</span>
+							</p>
+							<p class="m7">
+								<span class="s1" style="margin-right:-0.6rem;">CREATE DATE</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.CreateDate</span>
+							</p>
+						</div>
+					</div>
+				}
+
+			</section>
+
+		</div>
+	</div>
+</div>
+
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@ViewBag.Mas_id">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li asp-controller="MyHomePage" asp-action="MasterProduct">
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="AddPage">
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class='text'>Sign Out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>

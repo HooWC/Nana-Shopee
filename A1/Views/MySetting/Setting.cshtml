@@ -1,0 +1,161 @@
+﻿@model User
+
+@{
+	ViewData["Title"] = "Setting";
+	Layout = "Setting_Layout";
+}
+
+@if (@ViewBag.MyBackground == "black")
+{
+	<div class="all"></div>
+}
+else
+{
+	<div class="wall"></div>
+}
+
+<div class="container">
+	@if (@ViewBag.MyBackground == "black")
+	{
+		<div id="myback" class="settings black">
+			<div class="head">
+				<figure class="photo">
+					<img src="~/Img/TX/@Model.Hurl" />
+				</figure>
+				<div class="user_info">
+					<h2>@Model.UserName</h2>
+					<small>@Model.Email</small>
+				</div>
+				<span class="alink close">
+					<a asp-area="" asp-controller="MyHomePage" asp-action="Index" style="color:black;"><i class="far fa-times-circle"></i></a>
+				</span>
+			</div>
+			<div class="body">
+				<dl class="setting">
+					<dd>
+						<li class="setting_item">
+							<i class="fas fa-moon"></i>
+							<span class="item_options">Dark Mode</span>
+							<div class="switch">
+								@if (@ViewBag.MyBackground == "black")
+								{
+									<input id="dark_mode" type="checkbox" name="back" checked="checked" onclick="check(false)" />
+									<label for="dark_mode"></label>
+								}
+								else
+								{
+									<input id="dark_mode" type="checkbox" name="back" onclick="check(true)" />
+									<label for="dark_mode"></label>
+								}
+							</div>
+						</li>
+						<li class="setting_item h">
+							<i class="fa-solid fa-address-book"></i>
+							<a asp-area="" asp-controller="MySetting" asp-action="ContactUs" class="item_options b"><span>About us</span></a>
+							<span class="alink">
+								<i class="fas fa-angle-right"></i>
+							</span>
+						</li>
+						<li class="setting_item h">
+							<i class="fas fa-sign-out-alt"></i>
+							<a asp-area="" asp-controller="MyHomePage" asp-action="Signoutpage" class="item_options b"><span>Sign out</span></a>
+							<span class="alink">
+								<i class="fas fa-angle-right"></i>
+							</span>
+						</li>
+						<li class="setting_item h">
+							<i class="fa-solid fa-delete-left"></i>
+							<a asp-area="" asp-controller="MyHomePage" asp-action="Index" class="item_options b"><span>Back</span></a>
+							<span class="alink">
+								<i class="fas fa-angle-right"></i>
+							</span>
+						</li>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	}
+	else
+	{
+		<div id="myback" class="settings">
+			<div class="head">
+				<figure class="photo">
+					<img src="~/Img/TX/@Model.Hurl" />
+				</figure>
+				<div class="user_info">
+					<h2>@Model.UserName</h2>
+					<small>@Model.Email</small>
+				</div>
+				<span class="alink close">
+					<a asp-area="" asp-controller="MyHomePage" asp-action="Index" style="color:white;"><i class="far fa-times-circle"></i></a>
+				</span>
+			</div>
+			<div class="body">
+				<dl class="setting">
+					<dd>
+						<li class="setting_item">
+							<i class="fas fa-moon"></i>
+							<span class="item_options">Dark Mode</span>
+							<div class="switch">
+								@if (@ViewBag.MyBackground == "black")
+								{
+									<input id="dark_mode" type="checkbox" name="back" checked="checked" onclick="check(false)" />
+									<label for="dark_mode"></label>
+								}
+								else
+								{
+									<input id="dark_mode" type="checkbox" name="back" onclick="check(true)" />
+									<label for="dark_mode"></label>
+								}
+							</div>
+						</li>
+						<li class="setting_item n">
+							<i class="fa-solid fa-address-book"></i>
+							<a asp-area="" asp-controller="MySetting" asp-action="ContactUs" class="item_options snow"><span>About us</span></a>
+							<span class="alink">
+								<i class="fas fa-angle-right"></i>
+							</span>
+						</li>
+						<li class="setting_item n">
+							<i class="fas fa-sign-out-alt"></i>
+							<a asp-area="" asp-controller="MyHomePage" asp-action="Signoutpage" class="item_options snow"><span>Sign out</span></a>
+							<span class="alink">
+								<i class="fas fa-angle-right"></i>
+							</span>
+						</li>
+						<li class="setting_item n">
+							<i class="fa-solid fa-delete-left"></i>
+							<a asp-area="" asp-controller="MyHomePage" asp-action="Index" class="item_options snow"><span>Back</span></a>
+							<span class="alink">
+								<i class="fas fa-angle-right"></i>
+							</span>
+						</li>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	}
+</div>
+
+<script>
+	function check(v){
+		console.log("v  =" +v)
+		if(v == true){
+			//打开
+			document.getElementById("dark_mode").checked = true;
+			window.location.href="/MySetting/Setting?back=1";
+		}else if(v == false){
+			//关掉
+			document.getElementById("dark_mode").checked = false;
+			window.location.href="/MySetting/Setting?back=0";
+		}else{
+			if(@ViewBag.MyBackground == "black"){
+				document.getElementById("dark_mode").checked = true;
+				window.location.href="/MySetting/Setting?back=1";
+			}else{
+				document.getElementById("dark_mode").checked = false;
+				window.location.href="/MySetting/Setting?back=0";
+			}
+		}
+	}
+</script>

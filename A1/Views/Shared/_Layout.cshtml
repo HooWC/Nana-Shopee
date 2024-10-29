@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - A1</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+	@*<link rel="stylesheet" href="~/A1.styles.css" asp-append-version="true" />*@
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		  integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		  crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="~/Swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+	<link rel="shortcut icon" href="~/favicon.ico" />
+	<link rel="icon" href="~/favicon.ico" />
+	<link rel="Bookmark" href="~/favicon.ico" />
+	<link rel="shortcut icon ICON" href="~/favicon.ico" />
+</head>
+<body>
+
+	<section class="header">
+		<a class="logo" asp-controller="MyHomePage" asp-action="Index">
+			<img src="~/Img/logo5.png" alt="" />
+		</a>
+
+		<nav class="navbar">
+			<a id="home" asp-area="" asp-controller="MyHomePage" asp-action="Index"><i class="fa-solid fa-house"></i>Home</a>
+			<a id="product" asp-area="" asp-controller="Waiting" asp-action="WaitProduct"><i class="fa-brands fa-product-hunt"></i>Product</a>
+			<a id="shopping" asp-area="" asp-controller="Waiting" asp-action="WaitShoppingCart"><i class="fa-brands fa-product-hunt"></i>Shopping Cart</a>
+			<a id="history" asp-area="" asp-controller="Waiting" asp-action="WaitHistory"><i class="fa-solid fa-clock-rotate-left"></i>Purchase History</a>
+			<a asp-area="" asp-controller="Waiting" asp-action="WaitSetting"><i class="fa-solid fa-gears"></i>Setting</a>
+		</nav>
+
+		<nav class="login">
+			@if (@ViewBag.loginchanges == "success")
+			{
+				<a asp-area="" asp-controller="MyHomePage" asp-action="Signoutpage" class="loginright out"><i class="fa-solid fa-right-to-bracket"></i>SIGN OUT</a>
+			}
+			else
+			{
+				<a asp-area="" asp-controller="MyHomePage" asp-action="SignUpPage"><i class="fa fa-user-circle" aria-hidden="true"></i>SIGN UP</a>
+				<a asp-area="" asp-controller="MyHomePage" asp-action="LoginPage" class="loginright"><i class="fa-solid fa-right-to-bracket"></i>LOGIN</a>
+			}
+
+		</nav>
+
+		<div id='menu-btn' class='fas fa-bars' style="color:white;"></div>
+	</section>
+
+	<div>
+		<main role="main">
+			<partial name="_Notification" />
+			@RenderBody()
+		</main>
+	</div>
+
+	<section class=' footer'>
+		<div class='box-container'>
+			<div class="box">
+				<h3>quick links</h3>
+				<a asp-area="" asp-controller="MyHomePage" asp-action="Index"><i class='fas fa-angle-right'></i>Home</a>
+				<a asp-area="" asp-controller="MyHomePage" asp-action="ProductPage"><i class='fas fa-angle-right'></i>Product</a>
+				<a asp-area="" asp-controller="MyHomePage" asp-action="ShoppingCart"><i class='fas fa-angle-right'></i>Shopping Cart</a>
+				<a asp-area="" asp-controller="MyHomePage" asp-action="History"><i class='fas fa-angle-right'></i>Purchase History</a>
+			</div>
+
+			<div class='box'>
+				<h3>Login links</h3>
+				<a asp-area="" asp-controller="MyHomePage" asp-action="SignUpPage"><i class='fas fa-angle-right'></i> Sign Up</a>
+				<a asp-area="" asp-controller="MyHomePage" asp-action="LoginPage"><i class='fas fa-angle-right'></i> Login</a>
+
+			</div>
+
+			<div class='box'>
+				<h3>contact links</h3>
+				<a href='tel:0164486909' target="_blank"><i class='fas fa-phone'></i> +016-448-6909 </a>
+				<a href='tel:0164486909' target="_blank"><i class='fas fa-phone'></i> +019-445-9087 </a>
+				<a href='mailto:wengchin123456@gmail.com' target="_blank"><i class='fas fa-envelope'></i> wengchin123456@gmail.com </a>
+				<a href='https://www.google.com/maps/place/Eduvo+Academy/@@3.1299937,101.7209616,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc361677c8bd3d:0xd9e5023a46726e57!8m2!3d3.1299937!4d101.7231503' target="_blank"><i class='fas fa-map'></i> mumbai, india - 400104 </a>
+			</div>
+
+			<div class='box'>
+				<h3>follow us</h3>
+				<a href='https://www.facebook.com/profile.php?id=100075495878672' target="_blank"><i class="fab fa-facebook"></i> Facebook </a>
+				<a href='https://web.whatsapp.com/' target="_blank"><i class="fa-brands fa-whatsapp"></i> Whatsapp </a>
+				<a href='https://www.instagram.com/oneokrockofficial/' target="_blank"><i class="fab fa-instagram"></i> Instagram </a>
+				<a href='https://www.linkedin.com/feed/' target="_blank"><i class="fab fa-linkedin"></i> Linkedin </a>
+			</div>
+
+		</div>
+
+		<div class='credit'> Created by <span style="color:rgb(221, 162, 116);">Mr.Hoo designer</span> | all rights reserved!</div>
+
+	</section>
+
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/Swiper/swiper-bundle.min.js"></script>
+	<script src="~/js/script.js"></script>
+
+	<script>
+
+
+
+		var w = document.documentElement.clientWidth;
+		console.log(w);
+
+		var swiper = new Swiper(".mySwiper1", {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerGroup: 3,
+				loop: true,
+				loopFillGroupWithBlank: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+				},
+			});
+
+		if(document.documentElement.clientWidth <= 375){
+			var swiper = new Swiper(".Myxyj",
+			{
+				slidesPerView: 1,
+				spaceBetween: 10,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+		}else{
+			var swiper = new Swiper(".Myxyj",
+			{
+				slidesPerView: 3,
+				spaceBetween: 30,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+		}
+
+		var swiper = new Swiper(".home_box", {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+
+
+		var c = document.querySelector('.option');
+		var li = c.querySelectorAll('li');
+
+		$(function(){
+		  $('.option ul li').click(function(){
+			  var index = $(this).index();
+			  $('.product_menu .item').eq(index).show().siblings().hide();
+
+			  for(var j = 0 ; j < li.length; j++)
+					  {
+						  li[j].className= '@ViewBag.a2';
+					  }
+					  this.className = '@ViewBag.a2 sel';
+		  })
+		})
+
+
+		var swiper = new Swiper(".mySwiper1", {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		slidesPerGroup: 3,
+		loop: true,
+		loopFillGroupWithBlank: true,
+		pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		},
+		navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+		},
+		});
+
+		function chooseImg(file){
+			var file = file.files[0]
+
+			var reader = new FileReader();
+
+			reader.readAsDataURL(file);
+
+			reader.onload = function(){
+				var img = document.getElementById("img");
+				img.src = this.result;
+			};
+		}
+
+		let gotop = document.getElementById("gotop");
+
+
+		gotop.onclick = function(){
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop =0;
+		}
+
+		window.onscroll = function(){
+			let res = document.body.scrollTop || document.documentElement.scrollTop;
+			if(res >= 1300){
+				gotop.style.display = "block";
+			}else{
+				gotop.style.display = "none";
+			}
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+	<link rel="stylesheet" href="~/css/Success_Css.css" />
+</head>
+<body>
+	<div>
+		@RenderBody()
+	</div>
+
+	<script>
+		 function countDown(){
+
+			window.location.href="/MyHomePage/History";
+
+		}
+
+		//1000毫秒调用一次
+		window.setInterval("countDown()",2000);
+	</script>
+</body>
+</html>

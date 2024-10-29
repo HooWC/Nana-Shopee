@@ -1,0 +1,56 @@
+﻿@model IEnumerable<User>
+
+@{
+	ViewData["Title"] = "Information";
+	Layout = "Information_Layout";
+}
+
+
+<div class="i_header">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+@foreach (var i in Model)
+{
+	<div class="main_box">
+		<div class="box">
+			<div class="left">
+				<img src="~/Img/TX/@i.Hurl" alt="" />
+			</div>
+			<div class="right">
+				<div class="header">
+					<h6>@i.UserName</h6>
+				</div>
+				<hr />
+				<div class="gmail">
+					<h6>@i.Email</h6>
+				</div>
+
+				<div class="m_box">
+					<div class="m_left">
+						<p><span class="s1">Gender</span><span class="s2">@i.Gender</span></p>
+						<p><span class="s1">Address</span><span class="s2">@i.Address</span></p>
+						<p><span class="s1">AddressZIP</span><span class="s2">@i.AddressZip</span></p>
+						<p><span class="s1">CreateDate</span><span class="s2">@i.CreateDate</span></p>
+					</div>
+					<div class="m_right">
+						<p><span class="s1">Role</span><span class="s2">@i.Role</span></p>
+						<p><span class="s1">City</span><span class="s2">@i.City</span></p>
+						<p><span class="s1">Money</span><span class="s2">RM @(i.Money.ToString("0.00"))</span></p>
+						<p><span class="s1">Total Recharge</span><span class="s2">RM @(i.OutMoney.ToString("0.00"))</span></p>
+					</div>
+				</div>
+
+
+				<div class="out">
+					<a asp-controller="MyHomePage" asp-action="History">Back</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+}
+

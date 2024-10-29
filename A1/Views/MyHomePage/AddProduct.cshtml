@@ -1,0 +1,273 @@
+﻿@{
+	ViewData["Title"] = "AddProduct";
+	Layout = "Master_layout";
+}
+
+
+<div class="mas_header last">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+
+<div class="wrapper">
+	<div class="registration_form mn">
+		<div class="title t1">
+			Create Form
+		</div>
+
+		<form action="~/MyHomePage/AddProduct" enctype="multipart/form-data" method="post">
+			<div class="form_wrap v">
+				<div class="input_grp">
+					<div class="input_wrap">
+						<label for="fname">Product Name</label>
+						<input id="MyName" type="text" name="Name" placeholder="Enter Product Name" required>
+					</div>
+					<div class="input_wrap">
+						<label for="lname">Quantity</label>
+						<input class="pd" type="number" name="Quantity" placeholder="Quantity" required id="quantity">
+					</div>
+				</div>
+				<div class="input_wrap">
+					<label for="email">Video</label>
+					<input type="text" name="src" placeholder="Only Youtube Src or Enter no" required id="video">
+				</div>
+				<div class="input_wrap">
+					<label for="email">Product Image</label>
+					<input type="file" name="Img" required id="fileimg">
+				</div>
+				<div class="input_wrap">
+					<label for="email">Product Info</label>
+					<input type="text" name="Info" placeholder="Enter Info" required id="info">
+				</div>
+				<div class="input_grp">
+					<div class="input_wrap">
+						<label for="fname">Price</label>
+						<input class="pd" type="number" name="Price" placeholder="Enter Price" required id="price">
+					</div>
+					<div class="input_wrap">
+						<label for="lname">DelPrice</label>
+						<input class="pd" type="number" name="DelPrice" placeholder="Enter DelPrice" required id="delprice">
+					</div>
+				</div>
+				<div class="input_wrap">
+					<label>Category</label>
+					<ul>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="Phone" class="input_radio" checked>
+								<span>Phone</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="TV" class="input_radio">
+								<span>TV</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="Earphone" class="input_radio" checked>
+								<span>Earphone</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="Bicycle" class="input_radio">
+								<span>Bicycle</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="Computer" class="input_radio" checked>
+								<span>Computer</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="input_wrap">
+					<ul>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="Washer" class="input_radio" checked>
+								<span>Washer</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="Refrigerator" class="input_radio">
+								<span>Refrigerator</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="Pizza" class="input_radio" checked>
+								<span>Pizza</span>
+							</label>
+						</li>
+						<li>
+							<label class="radio_wrap">
+								<input type="radio" name="Category" value="Other" class="input_radio">
+								<span>Other</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="input_wrap">
+					<input id="submitbtn" type="submit" value="Create Now" class="submit_btn" disabled />
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@ViewBag.Mas_id">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li asp-controller="MyHomePage" asp-action="MasterProduct">
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="AddPage">
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class='text'>Sign Out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>
+
+<script>
+
+	var MyName = document.getElementById("MyName")
+	var quantity = document.getElementById("quantity")
+	var video = document.getElementById("video")
+	var fileimg = document.getElementById("fileimg")
+	var info = document.getElementById("info")
+	var price = document.getElementById("price")
+	var delprice = document.getElementById("delprice")
+
+	function Checkbtn(){
+		var MyName = document.getElementById("MyName").value
+		var quantity = document.getElementById("quantity").value
+		var video = document.getElementById("video").value
+		var fileimg = document.getElementById("fileimg").value
+		var info = document.getElementById("info").value
+		var price = document.getElementById("price").value
+		var delprice = document.getElementById("delprice").value
+
+		var checkVideo;
+		if(video.toLowerCase() == "no" || video.indexOf("https://www.youtube.com") != -1){
+			 checkVideo = "ya";
+		}else{
+			 checkVideo = "null";
+		}
+
+		console.log("CC  " + checkVideo)
+
+		if(MyName == "" || quantity == "" || video == "" || checkVideo == "null"  || fileimg == "" || info == "" || price == ""|| delprice == "" || parseInt(price) > parseInt(delprice)){
+			document.getElementById("submitbtn").disabled = true;
+		}else{
+			console.log("走过2")
+			document.getElementById("submitbtn").disabled = false;
+		}
+	}
+
+	MyName.onkeyup = function(){
+		if(this.value.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+			Checkbtn()
+		}
+	}
+
+	quantity.onkeyup = function(){
+		if(this.value >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	video.onkeyup = function(){
+		if(this.value.toLowerCase() == "no" || this.value.indexOf("https://www.youtube.com") != -1){
+			document.getElementById("submitbtn").disabled = false;
+			console.log("Video走过1")
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+			console.log("Video走过1   null")
+			Checkbtn()
+
+		}
+	}
+
+	fileimg.onchange = function(){
+		if(this.value == '') {
+			document.getElementById("submitbtn").disabled = true;
+		}else {
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}
+	}
+
+	info.onkeyup = function(){
+		if(this.value.length >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	price.onkeyup = function(){
+		if(this.value >= 1){
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+	delprice.onkeyup = function(){
+		var price2 = document.getElementById("price")
+		if(parseInt(this.value) >= parseInt(price2.value)){
+			console.log("MydelPrice走过1")
+			document.getElementById("submitbtn").disabled = false;
+			Checkbtn()
+		}else{
+			document.getElementById("submitbtn").disabled = true;
+		}
+	}
+
+
+
+</script>

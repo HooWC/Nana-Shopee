@@ -1,0 +1,240 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+    /* Design reference: https://dribbble.com/shots/10051583-Daily-UI-007-Settings */
+
+    /* basic */
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+.all {
+    background: #424d5b;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+.wall {
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 16px/1.2 "Roboto", sans-serif;
+    color: #333;
+}
+
+.blog {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.alink {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .alink i {
+        width: 20px;
+        font-size: 20px;
+    }
+
+/* container */
+.container {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* switch */
+.switch {
+    width: 37px;
+    position: relative;
+}
+
+    .switch input[type="checkbox"] {
+        visibility: hidden;
+    }
+
+        .switch input[type="checkbox"]:checked + label {
+            background-color: #f3a978;
+        }
+
+            .switch input[type="checkbox"]:checked + label:after {
+                left: 20px;
+            }
+
+    .switch label {
+        width: 100%;
+        height: 21px;
+        border-radius: 50px;
+        background-color: #5a6676;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+        .switch label:after {
+            content: "";
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: all 0.1s;
+        }
+
+/* settings */
+.settings {
+    color: snow;
+    background-color: #424d5b;
+}
+
+.black {
+    color: black;
+    background-color: snow;
+}
+/* head, body */
+.settings .head,
+.settings .body {
+    padding: 16px 8px;
+}
+
+    .settings .head + .body {
+        border-top: 1px solid #ccc;
+    }
+/* head */
+.settings .head {
+    text-align: center;
+    position: relative;
+}
+
+.settings .photo {
+    font-size: 0;
+}
+
+    .settings .photo img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+.settings .user_info {
+    margin-top: 8px;
+}
+
+    .settings .user_info h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .settings .user_info small {
+        font-size: 14px;
+    }
+
+.settings .close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+}
+/* body */
+.settings .body {
+}
+
+.setting > dd + dd {
+    margin-top: 8px;
+}
+
+.setting .setting_item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+
+
+    .setting .setting_item + .setting_item {
+        border-top: 1px solid #ccc;
+    }
+
+    .setting .setting_item a {
+        text-decoration: none;
+    }
+
+    .setting .setting_item .item_options {
+        flex-grow: 1;
+        padding: 0 8px;
+    }
+
+    .setting .setting_item .snow {
+        color: white;
+    }
+
+    .setting .setting_item .b {
+        color: black;
+        transition: all 0.2s;
+    }
+
+.setting .n {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    transition: all 0.2s;
+}
+
+    .setting .n:hover {
+        border-radius: 3px;
+        background: rgb(80, 165, 137);
+    }
+
+.setting .h {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    transition: all 0.2s;
+}
+
+    .setting .h:hover {
+        border-radius: 3px;
+        background: aquamarine;
+        color: black;
+    }
+
+        .setting .h:hover .b {
+            border-radius: 3px;
+            background: aquamarine;
+            color: black;
+        }

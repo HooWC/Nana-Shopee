@@ -1,0 +1,132 @@
+﻿@model IEnumerable<Product>
+
+@{
+	ViewData["Title"] = "MasterProductInfo";
+	Layout = "Master_layout";
+}
+
+<div class="mas_header productinfo">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+<div class="mas_main">
+	<div class="mas_box product_info">
+		<div class="container c3">
+
+			<section class="left leftproinfo">
+
+				@foreach (var i in Model)
+				{
+					<div class="img">
+						<img src="~/@i.Img" alt="" style="border-radius:10px;" />
+					</div>
+				}
+
+				@foreach (var i in Model)
+				{
+					<div class="bbtt">
+						<a asp-controller="MyHomePage" asp-action="MasterEditProduct" asp-route-id="@i.Id" class="u_btn" style="margin-right: 1rem;">EDIT</a>
+						<a asp-controller="MyHomePage" asp-action="MasterDeleteProduct" asp-route-id="@i.Id" class="u_btn">DELETE</a>
+					</div>
+				}
+			</section>
+
+
+			<section class="right">
+
+				@foreach (var i in Model)
+				{
+					<div class="my myproductifo">
+						<div class="header">
+							<h1>Customer</h1>
+							<hr />
+						</div>
+
+						<div class="c_main producticon">
+							<p class="m6">
+								<span class="s1" style="margin-right:-0.3rem;">PRODUCT_ID</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.Product_ID</span>
+							</p>
+							<p class="m1">
+								<span class="s1" style="margin-right:-1.8rem;">PRODUCTNAME</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.Name</span>
+							</p>
+							<p class="m2">
+								<span class="s1" style="margin-right:3rem;">PRICE</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">RM @(i.Price.ToString("0.00"))</span>
+							</p>
+							<p class="m3">
+								<span class="s1" style="margin-right:1.3rem;">DELPRICE</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">RM @(i.DelPrice.ToString("0.00"))</span>
+							</p>
+							<p class="m4">
+								<span class="s1" style="margin-right:0.8rem;">QUANTITY</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.Quantity</span>
+							</p>
+							<p class="m5">
+								<span class="s1" style="margin-right:0.8rem;">CATEGORY</span>
+								<i class="fas fa-arrows-alt-h"></i>
+								<span class="s2">@i.Category</span>
+							</p>
+						</div>
+					</div>
+				}
+
+			</section>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@ViewBag.Mas_id">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="AddPage">
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class='text'>Sign Out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>
+

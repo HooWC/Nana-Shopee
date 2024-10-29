@@ -1,0 +1,249 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #5e5e5e;
+}
+
+.bp {
+    background: url(../Img/pfnl/background.png) no-repeat;
+    background-size: cover;
+}
+
+.i_header {
+    position: relative;
+    user-select: none;
+}
+
+    .i_header img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .i_header div {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+
+.footer_get_touch_outer {
+    padding-top: 140px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.grid-70-30 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.get_form_inner {
+    display: block;
+    padding: 50px 40px;
+    background: #25252b;
+    /*box-shadow: -4px -2px 20px -7px #cfd5df;*/
+    box-shadow: 0 0 20px white, 0 0 60px white;
+}
+
+    .get_form_inner .context {
+        display: flex;
+    }
+
+        .get_form_inner .context .f1 {
+            flex: 20%;
+        }
+
+        .get_form_inner .context .f2 {
+            flex: 80%;
+        }
+
+        .get_form_inner .context .f1 p {
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-size: 1rem;
+            color: hsla(0, 0%, 100%, .6);
+        }
+
+        .get_form_inner .context .f2 p {
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #FFFFFFDE;
+        }
+
+input[type="text"], input[type="text"], input[type="email"], input[type="tel"] {
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #333;
+    height: 42px;
+    padding: 0 0 0 20px;
+    width: 100%;
+    outline: 0;
+}
+
+.grid-50-50 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-full {
+    margin: 20px 0;
+}
+
+textarea {
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #333;
+    padding: 12px 0 0 20px;
+    width: 100%;
+    outline: 0;
+    margin-bottom: 20px;
+}
+
+.get_form_inner_text h3 {
+    color: #FFFFFF99;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+input[type="button"] {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid white;
+    font-weight: 500;
+    padding: 10px 20px;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s;
+}
+
+    input[type="button"]:hover {
+        background-color: #f85508;
+        border-color: #f85508;
+        box-shadow: 0 0 20px #f85508, 0 0 60px #f85508;
+        color: #fff;
+    }
+
+.get_say_form {
+    display: inline-block;
+    padding: 45px 0 25px 30px;
+    background: #103e65;
+    position: relative;
+    box-shadow: 0 0 20px white, 0 0 60px white;
+    z-index: 0;
+}
+
+    .get_say_form h5 {
+        color: #fff;
+        font-size: 26px;
+        margin: 0 0 40px;
+    }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.get_say_social-icn {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+}
+
+    .get_say_social-icn a {
+        font-size: 22px;
+        color: #fff;
+        padding: 0 20px 0 0;
+    }
+
+.get_say_info_sec i {
+    color: #fff;
+    font-size: 32px;
+}
+
+.get_say_info_sec > li {
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+    .get_say_info_sec > li a {
+        width: 100%;
+        display: block;
+        padding: 15px 25px;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: unset;
+        font-weight: 500;
+        background: #162b65;
+        border-radius: 5px 0 0 5px;
+        transition: all 0.3s;
+    }
+
+.get_say_info_sec > .n a {
+    padding: 15px 24px;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.get_say_info_sec > li a:hover {
+    background-color: #f85508;
+    box-shadow: 0 0 20px #f85508, 0 0 60px #f85508;
+}
+
+@media screen and (max-width: 376px) {
+    .grid-70-30 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_get_touch_outer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .get_form_inner .context {
+        display: flex;
+    }
+
+        .get_form_inner .context .f1 {
+            flex: 30%;
+        }
+
+        .get_form_inner .context .f2 {
+            flex: 50%;
+        }
+
+        .get_form_inner .context .f1 p {
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-size: 0.5rem;
+            color: hsla(0, 0%, 100%, .6);
+        }
+
+        .get_form_inner .context .f2 p {
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-size: 0.5rem;
+            color: #FFFFFFDE;
+        }
+}

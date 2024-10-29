@@ -1,0 +1,68 @@
+﻿@model Product
+
+@{
+	ViewData["Title"] = "BuyPage";
+}
+
+
+<form method="post">
+
+	<section class="bp">
+		<section class="buy_box">
+
+			<div class="image">
+				<img src="~/@Model.Img" alt="" />
+			</div>
+
+			<div class="context">
+				<h5>@Model.Name</h5>
+				<p class="ct">@Model.Info</p>
+				@if (@Model.Price == @Model.DelPrice)
+				{
+					<p class="p-to"><span class="spa">RM @(Model.Price.ToString("0.00"))  </span></p>
+				}
+				else
+				{
+					<p class="p-to"><span class="spa">RM @(Model.Price.ToString("0.00"))  </span><del>RM @(Model.DelPrice.ToString("0.00"))</del></p>
+				}
+
+
+				<div class="buy_option">
+					<button type="submit" class="bbtt buy_btn" asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@Model.Id">Add</button>
+					<button class="bbtt back_btn" asp-controller="MyHomePage" asp-action="Index">BACK TO HOME</button>
+				</div>
+			</div>
+
+			<div class="face">
+				<div class="icon_face">
+					<a asp-controller="MyHomePage" asp-action="AddFace" asp-route-id="@Model.Id" asp-route-face="1">
+						<img src="~/Img/face/1.gif" />
+						<p class="p1">Amused</p>
+						<p class="p2">@Model.P1</p>
+					</a>
+					<a asp-controller="MyHomePage" asp-action="AddFace" asp-route-id="@Model.Id" asp-route-face="2">
+						<img src="~/Img/face/2.gif" />
+						<p class="p1">Excited</p>
+						<p class="p2">@Model.P2</p>
+					</a>
+					<a asp-controller="MyHomePage" asp-action="AddFace" asp-route-id="@Model.Id" asp-route-face="3">
+						<img src="~/Img/face/3.gif" />
+						<p class="p1">Sad</p>
+						<p class="p2">@Model.P3</p>
+					</a>
+					<a asp-controller="MyHomePage" asp-action="AddFace" asp-route-id="@Model.Id" asp-route-face="4">
+						<img src="~/Img/face/4.gif" />
+						<p class="p1">Scorn</p>
+						<p class="p2">@Model.P4</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="pl">
+				<a class="a1" asp-controller="MyHomePage" asp-action="Com" asp-route-id="@Model.Id"><i class="fa-solid fa-message"></i></a>
+			</div>
+
+		</section>
+	</section>
+
+</form>

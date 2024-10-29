@@ -1,0 +1,171 @@
+﻿@model IEnumerable<Product>
+
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+@{
+	if (@ViewBag.background == "black")
+	{
+		ViewBag.c1 = "product_show_black";
+		ViewBag.c2 = "title_black";
+		ViewBag.c3 = "XYJ_black";
+	}
+}
+
+<div class="home_page">
+	<div class="swiper home_box">
+		<div class="swiper-wrapper">
+
+			<a asp-controller="MyHomePage" asp-action="ProductPage" class="swiper-slide slide" style="background:url(./Img/1.webp) no-repeat; background-size: cover;">
+
+			</a>
+
+			<a asp-controller="MyHomePage" asp-action="ProductPage" class="swiper-slide slide" style="background:url(./Img/2.webp) no-repeat; background-size: cover;">
+
+			</a>
+
+			<a asp-controller="MyHomePage" asp-action="ProductPage" class="swiper-slide slide" style="background:url(./Img/3.webp) no-repeat; background-size: cover;">
+
+			</a>
+
+			<a asp-controller="MyHomePage" asp-action="ProductPage" class="swiper-slide slide" style="background:url(./Img/4.jpg) no-repeat; background-size: cover;">
+
+			</a>
+
+			<a asp-controller="MyHomePage" asp-action="ProductPage" class="swiper-slide slide" style="background:url(./Img/5.jpg) no-repeat; background-size: cover;">
+
+			</a>
+
+			<a asp-controller="MyHomePage" asp-action="ProductPage" class="swiper-slide slide" style="background:url(./Img/6.webp) no-repeat; background-size: cover;">
+
+			</a>
+
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
+
+
+<div class="product_show @ViewBag.c1">
+	<div class="title t @ViewBag.c2">
+		<h3>cell phone</h3>
+		<h4><a asp-area="" asp-controller="MyHomePage" asp-action="ProductPage"><i class="fa-solid fa-circle-right"></i>More</a></h4>
+	</div>
+
+
+	<div class="fl_box">
+
+		<div class="left">
+			<img src="~/Img/h1.webp" alt="" />
+		</div>
+
+		<div class="right">
+
+			@foreach (var i in Model.Where(x => x.Page == "Homeright"))
+			{
+				<div href="" class="insert_box">
+					<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+						<img src="~/@i.Img" alt="" />
+						<div class="cs">
+							<h6>@i.Name</h6>
+							<h6 class="ct ct2">@i.Info</h6>
+							@if (i.Price == i.DelPrice)
+							{
+								<h6><span class="spa yy">RM @(i.Price.ToString("0.00")) </span></h6>
+							}
+							else
+							{
+								<h6><span class="spa yy">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+							}
+						</div>
+					</a>
+				</div>
+			}
+
+		</div>
+	</div>
+</div>
+
+<section class="XYJ @ViewBag.c3">
+
+	<div class="title @ViewBag.c2">
+		<h3>washing machine</h3>
+		<h4><a asp-area="" asp-controller="MyHomePage" asp-action="ProductPage"><i class="fa-solid fa-circle-right"></i>More</a></h4>
+	</div>
+
+	<div class="swiper Myxyj">
+		<div class="swiper-wrapper">
+
+			@foreach (var i in Model.Where(x => x.Page == "Hometwo"))
+			{
+				<div href="" class="swiper-slide slide s1">
+					<a class="j1" asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+						<img class="j2" src="~/@i.Img" alt="" />
+						<div class="cs">
+							<h5>@i.Name</h5>
+							<h6 class="ct">@i.Info</h6>
+							@*<h6 class="down"><span class="spa">RM @i.Price</span><del>RM @i.DelPrice</del></h6>*@
+							@if (i.Price == i.DelPrice)
+							{
+								<h6 class="down"><span class="spa">RM @(i.Price.ToString("0.00"))</span></h6>
+							}
+							else
+							{
+								<h6 class="down"><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+							}
+						</div>
+					</a>
+				</div>
+			}
+
+
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</section>
+
+<section class="XYJ @ViewBag.c3">
+
+	<div class="title @ViewBag.c2">
+		<h3>Refrigerator</h3>
+		<h4><a asp-area="" asp-controller="MyHomePage" asp-action="ProductPage"><i class="fa-solid fa-circle-right"></i>More</a></h4>
+	</div>
+
+	<div class="swiper Myxyj">
+		<div class="swiper-wrapper">
+
+			@foreach (var i in Model.Where(x => x.Page == "Homethree"))
+			{
+				<div href="" class="swiper-slide slide">
+					<a asp-controller="MyHomePage" asp-action="BuyPage" asp-route-id="@i.Id">
+						<img src="~/@i.Img" alt="" style="width:210px;" />
+						<div class="cs">
+							<h5>@i.Name</h5>
+							<h6 class="ct">@i.Info</h6>
+							@*<h6 class="down"><span class="spa">RM @i.Price</span><del>RM @i.DelPrice</del></h6>*@
+							@if (i.Price == i.DelPrice)
+							{
+								<h6 class="down"><span class="spa">RM @(i.Price.ToString("0.00"))</span></h6>
+							}
+							else
+							{
+								<h6 class="down"><span class="spa">RM @(i.Price.ToString("0.00")) </span><del>RM @(i.DelPrice.ToString("0.00"))</del></h6>
+							}
+						</div>
+					</a>
+				</div>
+			}
+
+
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</section>
+
+<script>
+	document.getElementById("home").style.background = "cornflowerblue"
+</script>

@@ -1,0 +1,150 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: antiquewhite;
+}
+
+.logo {
+    margin: 1rem auto;
+    width: 200px;
+}
+
+    .logo img {
+        width: 100%;
+    }
+
+hr {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.context {
+    padding: 1rem 4rem;
+}
+
+    .context .text p {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
+
+    .context .text span {
+        font-weight: 100;
+    }
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .box .t_box {
+        width: 140px;
+        background: white;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+        .box .t_box .img img {
+            width: 80px;
+        }
+
+        .box .t_box .word .name {
+            font-size: 0.6rem;
+        }
+
+        .box .t_box .word .pID {
+            font-size: 0.4rem;
+            margin-top: 0.3rem;
+        }
+
+        .box .t_box .word .price {
+            font-size: 0.4rem;
+            margin-top: 0.3rem;
+            color: red;
+        }
+
+.context .btn {
+    display: flex;
+}
+
+    .context .btn .b1 {
+        padding: 8px 40px;
+        border-radius: 2px;
+        background: red;
+        color: white;
+        border: none;
+        margin-top: 2rem;
+        transition: all 0.3s;
+        margin: 1rem;
+        text-decoration: none;
+    }
+
+    .context .btn .b2 {
+        font-size: 1rem;
+    }
+
+    .context .btn .b1:hover {
+        box-shadow: 0 0 20px coral, 0 0 60px coral;
+    }
+
+.footer_box {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: beige;
+}
+
+    .footer_box .footer_context {
+    }
+
+@media screen and (max-width: 376px) {
+    .context {
+        padding: 1rem 2rem;
+    }
+
+    .box .t_box {
+        width: 80px;
+        background: white;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+        .box .t_box .img img {
+            width: 50px;
+        }
+
+        .box .t_box .word .name {
+            font-size: 0.3rem;
+        }
+
+        .box .t_box .word .pID {
+            font-size: 0.4rem;
+            margin-top: 0.3rem;
+        }
+
+        .box .t_box .word .price {
+            font-size: 0.4rem;
+            margin-top: 0.3rem;
+            color: red;
+        }
+
+    .context .text p {
+        font-size: 0.3rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
+
+    .logo {
+        margin: 1rem auto;
+        width: 100px;
+    }
+}

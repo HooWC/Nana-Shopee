@@ -1,0 +1,161 @@
+﻿@model IEnumerable<Cart>
+
+@{
+	ViewData["Title"] = "ShoppingCart";
+}
+
+@{
+
+	string CartList = "";
+
+	foreach (var i in Model)
+	{
+		CartList += i.Id + "|";
+	}
+
+	double total = 5;
+	double subtotal = 0;
+
+	foreach (var i in Model)
+	{
+		if (i.Img == "No Data")
+		{
+			total = 0;
+			ViewBag.display = "display:none";
+		}
+		else
+		{
+			subtotal += (i.LastQuantity * i.Product_Price);
+			total += (i.LastQuantity * i.Product_Price);
+			ViewBag.display = "display:block";
+		}
+	}
+	double strtotal = Convert.ToDouble(total.ToString("0.00"));
+	total = Convert.ToDouble(strtotal.ToString("0.00"));
+	//double outtotal = Convert.ToDouble((total * 1.06).ToString(" 0.00"));
+}
+
+@{
+	if (@ViewBag.background == "black")
+	{
+		ViewBag.bb1 = "c_checkout-details_black";
+		ViewBag.bb2 = "c_checkout-details-inner_black";
+		ViewBag.bb3 = "c_card-price_black";
+		ViewBag.bb4 = "tprice_black";
+	}
+}
+
+<div class="cart_title">
+	<h1>Shopping Cart</h1>
+</div>
+
+<div class="bp_cart">
+	<section class="c_checkout-details @ViewBag.bb1">
+		<div class="c_checkout-details-inner @ViewBag.bb2">
+
+			@if (ViewBag.No == "No Data")
+			{
+				<div class="No_Data">
+					<h6>-  No Data  -</h6>
+				</div>
+
+			}
+			else
+			{
+				<div class="c_checkout-lists">
+					@foreach (var i in Model)
+					{
+						<div class="c_card">
+							<div class="c_card-image">
+								<div class="cl">
+									<a asp-controller="MyHomePage" asp-action="DelProduct" asp-route-ID="@i.Id" asp-route-UserID="@i.UserID" asp-route-PID="@i.Product_ID"><i class="fas fa-times-circle"></i></a>
+								</div>
+								<img src="~/@i.Img" alt="">
+							</div>
+							<div class="c_card-details">
+								<div class="c_card-name">@i.ProductName</div>
+								<div class="c_card-price @ViewBag.bb3">RM <span id="p">@(i.Product_Price.ToString("0.00"))</span></div>
+								<div class="c_card-wheel">
+									<form action="~/MyHomePage/ShoppingCart" method="post">
+										@*<button id="minus" class="b1">-</button>
+											<span id="quantity"></span>
+											<button id="add" class="b1">+</button>*@
+										<button id="minus" type="submit" class="b1" asp-controller="MyHomePage" asp-action="ShoppingCart" asp-route-ID="@i.Id" asp-route-UserID="@i.UserID" asp-route-PID="@i.Product_ID" asp-route-add="-">-</button>
+										<span id="quantity">@i.LastQuantity</span>
+										<button id="add" type="submit" class="b1" asp-controller="MyHomePage" asp-action="ShoppingCart" asp-route-ID="@i.Id" asp-route-UserID="@i.UserID" asp-route-PID="@i.Product_ID" asp-route-add="+">+</button>
+									</form>
+								</div>
+							</div>
+
+							<div class="c_total">
+								<h4>Total</h4>
+								<div class="tprice @ViewBag.bb4">RM @((i.Product_Price * i.LastQuantity).ToString("0.00"))</div>
+								@*<div class="tprice" id="total"></div>*@
+							</div>
+
+						</div>
+					}
+
+				</div>
+
+				<div style="display:none"></div>
+
+				<div class="c_checkout-shipping">
+					<h6>Freight</h6>
+					<p>RM 5.00</p>
+				</div>
+
+				<div class="c_checkout-shipping">
+					<h6>Tax</h6>
+					<p>RM @((subtotal * 0.06).ToString("0.00"))</p>
+				</div>
+
+				<div class="c_checkout-total">
+					<h6>Total</h6>
+					<p>RM @((total * 1.06).ToString("0.00"))</p>
+				</div>
+
+
+				<div class="totalprice" style="@ViewBag.display">
+					<a asp-controller="MyHomePage" asp-action="CardNumb" asp-route-Total="@total" asp-route-CartList="@CartList"><p class="btn btn-outline-warning py-3 px-8 col-md-2 offset-md-10 sb_btn ">Buy Now</p></a>
+					@*<a asp-controller="MyHomePage" asp-action="Buy" asp-route-Total="@total"><p class="btn btn-outline-warning py-3 px-8 col-md-2 offset-md-10 sb_btn ">Buy Now</p></a>*@
+				</div>
+
+			}
+		</div>
+	</section>
+</div>
+
+
+
+@*<script>
+	var add = document.getElementById("add");
+	var minus = document.getElementById("minus");
+	var q = document.getElementById("quantity");
+	var price = document.getElementById("p");
+	var total = document.getElementById("total");
+
+	total.innerHTML = "RM " + price.innerHTML
+	q.innerHTML = 1
+	add.onclick = function(){
+	//产品满
+	if(@ViewBag.b == 0){
+
+	}
+	q.innerHTML++
+	total.innerHTML = "RM " +(q.innerHTML * price.innerHTML).toFixed(2);
+	}
+
+	minus.onclick = function(){
+	//0 删除
+	if(q.innerHTML == 0){
+
+	}
+	q.innerHTML--
+	total.innerHTML = "RM " +(q.innerHTML * price.innerHTML).toFixed(2);
+	}
+	</script>*@
+
+<script>
+	document.getElementById("shopping").style.background = "cornflowerblue"
+</script>

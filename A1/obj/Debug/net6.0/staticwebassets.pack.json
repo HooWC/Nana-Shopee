@@ -1,0 +1,1597 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\A1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\A1.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\1.webp",
+      "PackagePath": "staticwebassets\\Img\\1.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\2.webp",
+      "PackagePath": "staticwebassets\\Img\\2.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\3.webp",
+      "PackagePath": "staticwebassets\\Img\\3.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\4.jpg",
+      "PackagePath": "staticwebassets\\Img\\4.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\5.jpg",
+      "PackagePath": "staticwebassets\\Img\\5.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\6.webp",
+      "PackagePath": "staticwebassets\\Img\\6.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\2145thumb-1920-73778.jpg",
+      "PackagePath": "staticwebassets\\Img\\Product\\2145thumb-1920-73778.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\421thumb-1920-73778.jpg",
+      "PackagePath": "staticwebassets\\Img\\Product\\421thumb-1920-73778.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\4858thumb-1920-73778.jpg",
+      "PackagePath": "staticwebassets\\Img\\Product\\4858thumb-1920-73778.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\5507103246tpm1v98228qg1dio.jpg",
+      "PackagePath": "staticwebassets\\Img\\Product\\5507103246tpm1v98228qg1dio.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\6484thumb-1920-73778.jpg",
+      "PackagePath": "staticwebassets\\Img\\Product\\6484thumb-1920-73778.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\6963thumb-1920-73778.jpg",
+      "PackagePath": "staticwebassets\\Img\\Product\\6963thumb-1920-73778.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\8179103246tpm1v98228qg1dio.jpg",
+      "PackagePath": "staticwebassets\\Img\\Product\\8179103246tpm1v98228qg1dio.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\83283490db0c6df4db59.jfif",
+      "PackagePath": "staticwebassets\\Img\\Product\\83283490db0c6df4db59.jfif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\86333fa996e07e665523.jfif",
+      "PackagePath": "staticwebassets\\Img\\Product\\86333fa996e07e665523.jfif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\Product\\9772103246tpm1v98228qg1dio.jpg",
+      "PackagePath": "staticwebassets\\Img\\Product\\9772103246tpm1v98228qg1dio.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\TX\\13My@gmail.com2627c9b3b10044acaa762b436af2871e.jpeg",
+      "PackagePath": "staticwebassets\\Img\\TX\\13My@gmail.com2627c9b3b10044acaa762b436af2871e.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\TX\\1wengchin123456@gmail.com103246tpm1v98228qg1dio.jpg",
+      "PackagePath": "staticwebassets\\Img\\TX\\1wengchin123456@gmail.com103246tpm1v98228qg1dio.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\TX\\1wengchin123456@gmail.com3490db0c6df4db59.jfif",
+      "PackagePath": "staticwebassets\\Img\\TX\\1wengchin123456@gmail.com3490db0c6df4db59.jfif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\TX\\1wengchin123456@gmail.com3fa996e07e665523.jfif",
+      "PackagePath": "staticwebassets\\Img\\TX\\1wengchin123456@gmail.com3fa996e07e665523.jfif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\TX\\2wengchin112233@gmail.com62592453dbe25.png",
+      "PackagePath": "staticwebassets\\Img\\TX\\2wengchin112233@gmail.com62592453dbe25.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\TX\\himg.png",
+      "PackagePath": "staticwebassets\\Img\\TX\\himg.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\back.jpg",
+      "PackagePath": "staticwebassets\\Img\\back.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\back1.png",
+      "PackagePath": "staticwebassets\\Img\\back1.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\back2.jpg",
+      "PackagePath": "staticwebassets\\Img\\back2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\bx\\a1.jpg",
+      "PackagePath": "staticwebassets\\Img\\bx\\a1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\bx\\a2.png",
+      "PackagePath": "staticwebassets\\Img\\bx\\a2.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\bx\\a3.png",
+      "PackagePath": "staticwebassets\\Img\\bx\\a3.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\bx\\a4.jpg",
+      "PackagePath": "staticwebassets\\Img\\bx\\a4.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\bx\\a5.png",
+      "PackagePath": "staticwebassets\\Img\\bx\\a5.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\bx\\a6.jpg",
+      "PackagePath": "staticwebassets\\Img\\bx\\a6.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\bx\\a7.jpg",
+      "PackagePath": "staticwebassets\\Img\\bx\\a7.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\bx\\a8.jpg",
+      "PackagePath": "staticwebassets\\Img\\bx\\a8.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\c1.jpg",
+      "PackagePath": "staticwebassets\\Img\\c1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\c2.png",
+      "PackagePath": "staticwebassets\\Img\\c2.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\c3.jpg",
+      "PackagePath": "staticwebassets\\Img\\c3.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\c4.jpg",
+      "PackagePath": "staticwebassets\\Img\\c4.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\c5.jpg",
+      "PackagePath": "staticwebassets\\Img\\c5.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\c6.jpg",
+      "PackagePath": "staticwebassets\\Img\\c6.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\c7.jpg",
+      "PackagePath": "staticwebassets\\Img\\c7.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\check.gif",
+      "PackagePath": "staticwebassets\\Img\\check.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\coffee\\e1.jpg",
+      "PackagePath": "staticwebassets\\Img\\coffee\\e1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\coffee\\e2.jpg",
+      "PackagePath": "staticwebassets\\Img\\coffee\\e2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\coffee\\h.png",
+      "PackagePath": "staticwebassets\\Img\\coffee\\h.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\coffee\\logo.png",
+      "PackagePath": "staticwebassets\\Img\\coffee\\logo.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\comp-1_1.gif",
+      "PackagePath": "staticwebassets\\Img\\comp-1_1.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\1.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\10.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\10.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\11.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\11.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\12.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\12.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\13.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\13.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\14.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\14.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\15.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\15.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\16.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\16.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\17.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\17.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\18.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\18.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\19.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\19.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\2.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\20.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\20.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\21.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\21.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\22.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\22.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\23.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\23.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\24.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\24.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\25.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\25.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\26.png",
+      "PackagePath": "staticwebassets\\Img\\computer\\26.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\3.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\3.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\4.png",
+      "PackagePath": "staticwebassets\\Img\\computer\\4.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\5.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\5.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\6.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\6.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\7.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\7.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\8.png",
+      "PackagePath": "staticwebassets\\Img\\computer\\8.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\9.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\9.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\e1.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\e1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\computer\\e2.jpg",
+      "PackagePath": "staticwebassets\\Img\\computer\\e2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\1.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\1.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\10.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\10.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\11.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\11.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\12.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\12.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\13.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\13.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\14.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\14.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\15.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\15.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\16.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\16.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\17.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\17.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\18.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\18.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\19.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\19.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\2.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\20.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\20.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\21.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\21.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\22.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\22.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\3.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\3.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\4.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\4.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\5.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\5.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\6.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\6.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\7.png",
+      "PackagePath": "staticwebassets\\Img\\ej\\7.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\8.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\8.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\9.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\9.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\e1.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\e1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\ej\\e2.jpg",
+      "PackagePath": "staticwebassets\\Img\\ej\\e2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\face\\1.gif",
+      "PackagePath": "staticwebassets\\Img\\face\\1.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\face\\2.gif",
+      "PackagePath": "staticwebassets\\Img\\face\\2.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\face\\3.gif",
+      "PackagePath": "staticwebassets\\Img\\face\\3.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\face\\4.gif",
+      "PackagePath": "staticwebassets\\Img\\face\\4.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h1.webp",
+      "PackagePath": "staticwebassets\\Img\\h1.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h2.webp",
+      "PackagePath": "staticwebassets\\Img\\h2.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h3.webp",
+      "PackagePath": "staticwebassets\\Img\\h3.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h4.webp",
+      "PackagePath": "staticwebassets\\Img\\h4.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h5.webp",
+      "PackagePath": "staticwebassets\\Img\\h5.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h6.webp",
+      "PackagePath": "staticwebassets\\Img\\h6.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h7.webp",
+      "PackagePath": "staticwebassets\\Img\\h7.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h8.webp",
+      "PackagePath": "staticwebassets\\Img\\h8.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\h9.webp",
+      "PackagePath": "staticwebassets\\Img\\h9.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\icon\\dislike.png",
+      "PackagePath": "staticwebassets\\Img\\icon\\dislike.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\icon\\like.png",
+      "PackagePath": "staticwebassets\\Img\\icon\\like.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\1.jpg",
+      "PackagePath": "staticwebassets\\Img\\jtc\\1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\2.jpg",
+      "PackagePath": "staticwebassets\\Img\\jtc\\2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\3.png",
+      "PackagePath": "staticwebassets\\Img\\jtc\\3.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\4.jpg",
+      "PackagePath": "staticwebassets\\Img\\jtc\\4.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\5.png",
+      "PackagePath": "staticwebassets\\Img\\jtc\\5.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\6.jpg",
+      "PackagePath": "staticwebassets\\Img\\jtc\\6.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\7.png",
+      "PackagePath": "staticwebassets\\Img\\jtc\\7.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\8.png",
+      "PackagePath": "staticwebassets\\Img\\jtc\\8.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\e1.jpg",
+      "PackagePath": "staticwebassets\\Img\\jtc\\e1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\g1.gif",
+      "PackagePath": "staticwebassets\\Img\\jtc\\g1.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\jtc\\g2.gif",
+      "PackagePath": "staticwebassets\\Img\\jtc\\g2.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\logo.png",
+      "PackagePath": "staticwebassets\\Img\\logo.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\logo2.png",
+      "PackagePath": "staticwebassets\\Img\\logo2.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\logo3.png",
+      "PackagePath": "staticwebassets\\Img\\logo3.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\logo4.png",
+      "PackagePath": "staticwebassets\\Img\\logo4.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\logo5.png",
+      "PackagePath": "staticwebassets\\Img\\logo5.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\masterimg\\1.jpg",
+      "PackagePath": "staticwebassets\\Img\\masterimg\\1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\masterimg\\2.jpg",
+      "PackagePath": "staticwebassets\\Img\\masterimg\\2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\masterimg\\3.jpg",
+      "PackagePath": "staticwebassets\\Img\\masterimg\\3.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\masterimg\\4.jpg",
+      "PackagePath": "staticwebassets\\Img\\masterimg\\4.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\masterimg\\5.jpg",
+      "PackagePath": "staticwebassets\\Img\\masterimg\\5.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\1.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\1.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\10.png",
+      "PackagePath": "staticwebassets\\Img\\other\\10.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\11.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\11.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\12.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\12.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\13.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\13.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\14.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\14.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\15.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\15.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\16.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\16.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\17.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\17.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\18.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\18.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\19.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\19.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\2.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\20.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\20.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\21.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\21.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\22.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\22.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\23.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\23.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\24.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\24.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\25.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\25.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\26.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\26.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\27.webp",
+      "PackagePath": "staticwebassets\\Img\\other\\27.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\3.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\3.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\4.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\4.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\5.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\5.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\6.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\6.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\7.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\7.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\8.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\8.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\other\\9.jpg",
+      "PackagePath": "staticwebassets\\Img\\other\\9.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pfnl\\background.png",
+      "PackagePath": "staticwebassets\\Img\\pfnl\\background.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\1.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\1.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\10.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\10.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\11.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\11.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\12.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\12.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\13.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\13.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\14.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\14.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\15.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\15.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\16.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\16.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\17.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\17.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\18.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\18.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\19.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\19.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\2.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\2.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\20.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\20.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\21.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\21.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\22.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\22.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\23.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\23.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\24.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\24.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\25.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\25.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\26.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\26.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\27.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\27.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\28.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\28.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\29.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\29.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\3.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\3.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\30.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\30.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\4.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\4.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\5.jpg",
+      "PackagePath": "staticwebassets\\Img\\phone\\5.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\6.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\6.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\7.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\7.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\8.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\8.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\phone\\9.png",
+      "PackagePath": "staticwebassets\\Img\\phone\\9.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\1.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\1.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\10.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\10.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\11.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\11.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\12.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\12.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\13.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\13.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\14.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\14.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\15.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\15.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\16.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\16.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\17.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\17.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\18.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\18.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\19.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\19.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\2.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\2.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\20.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\20.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\21.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\21.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\23.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\23.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\24.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\24.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\25.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\25.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\26.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\26.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\27.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\27.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\28.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\28.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\29.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\29.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\3.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\3.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\30.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\30.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\31.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\31.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\32.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\32.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\33.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\33.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\34.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\34.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\35.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\35.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\36.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\36.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\37.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\37.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\38.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\38.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\39.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\39.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\4.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\4.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\40.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\40.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\41.jpg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\41.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\42.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\42.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\43.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\43.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\44.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\44.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\45.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\45.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\46.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\46.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\47.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\47.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\48.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\48.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\49.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\49.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\5.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\5.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\50.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\50.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\51.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\51.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\52.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\52.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\53.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\53.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\54.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\54.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\55.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\55.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\56.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\56.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\57.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\57.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\58.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\58.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\59.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\59.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\6.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\6.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\60.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\60.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\61.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\61.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\62.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\62.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\63.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\63.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\64.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\64.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\65.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\65.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\66.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\66.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\67.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\67.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\7.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\7.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\8.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\8.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\9.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\9.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\back1.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\back1.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\back2.jpg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\back2.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\back3.jpeg",
+      "PackagePath": "staticwebassets\\Img\\pizza\\back3.jpeg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\back4.webp",
+      "PackagePath": "staticwebassets\\Img\\pizza\\back4.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e1.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e1.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e2.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e2.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e3.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e3.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e4.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e4.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e5.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e5.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e6.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e6.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e7.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e7.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e8.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e8.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\pizza\\e9.png",
+      "PackagePath": "staticwebassets\\Img\\pizza\\e9.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\sa.gif",
+      "PackagePath": "staticwebassets\\Img\\sa.gif"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\1.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\1.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\1.webp",
+      "PackagePath": "staticwebassets\\Img\\tv\\1.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\10.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\10.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\11.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\11.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\12.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\12.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\13.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\13.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\14.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\14.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\15.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\15.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\16.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\16.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\17.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\17.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\18.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\18.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\19.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\19.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\2.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\2.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\20.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\20.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\21.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\21.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\22.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\22.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\23.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\23.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\24.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\24.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\25.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\25.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\26.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\26.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\27.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\27.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\28.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\28.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\29.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\29.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\3.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\3.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\30.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\30.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\4.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\4.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\5.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\5.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\6.jpg",
+      "PackagePath": "staticwebassets\\Img\\tv\\6.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\7.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\7.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\8.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\8.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\tv\\9.png",
+      "PackagePath": "staticwebassets\\Img\\tv\\9.png"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\x1.webp",
+      "PackagePath": "staticwebassets\\Img\\x1.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\x2.webp",
+      "PackagePath": "staticwebassets\\Img\\x2.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\x4.jpg",
+      "PackagePath": "staticwebassets\\Img\\x4.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\x5.webp",
+      "PackagePath": "staticwebassets\\Img\\x5.webp"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\x6.jpg",
+      "PackagePath": "staticwebassets\\Img\\x6.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Img\\x7.jpg",
+      "PackagePath": "staticwebassets\\Img\\x7.jpg"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\JQuery\\jquery-3.6.0.js",
+      "PackagePath": "staticwebassets\\JQuery\\jquery-3.6.0.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\Swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\Swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\Swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\CardStyle.css",
+      "PackagePath": "staticwebassets\\css\\CardStyle.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Card_Css.css",
+      "PackagePath": "staticwebassets\\css\\Card_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Com_Css.css",
+      "PackagePath": "staticwebassets\\css\\Com_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Comment_Css.css",
+      "PackagePath": "staticwebassets\\css\\Comment_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Contact_Css.css",
+      "PackagePath": "staticwebassets\\css\\Contact_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\History_CSS.css",
+      "PackagePath": "staticwebassets\\css\\History_CSS.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Information_Style.css",
+      "PackagePath": "staticwebassets\\css\\Information_Style.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\LoginStyle.css",
+      "PackagePath": "staticwebassets\\css\\LoginStyle.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Master_Css.css",
+      "PackagePath": "staticwebassets\\css\\Master_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\OldMaster_Css.css",
+      "PackagePath": "staticwebassets\\css\\OldMaster_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Setting_Css.css",
+      "PackagePath": "staticwebassets\\css\\Setting_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\SignStyle.css",
+      "PackagePath": "staticwebassets\\css\\SignStyle.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\SignupStyle.css",
+      "PackagePath": "staticwebassets\\css\\SignupStyle.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Success_Css.css",
+      "PackagePath": "staticwebassets\\css\\Success_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\Waiting_Css.css",
+      "PackagePath": "staticwebassets\\css\\Waiting_Css.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\js\\Card.js",
+      "PackagePath": "staticwebassets\\js\\Card.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\js\\Master.js",
+      "PackagePath": "staticwebassets\\js\\Master.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\zy-media\\zy.media.css",
+      "PackagePath": "staticwebassets\\zy-media\\zy.media.css"
+    },
+    {
+      "Id": "E:\\学校\\Diploma学校\\DWP205\\A1\\A1\\A1\\wwwroot\\zy-media\\zy.media.js",
+      "PackagePath": "staticwebassets\\zy-media\\zy.media.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.A1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.A1.props",
+      "PackagePath": "build\\A1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.A1.props",
+      "PackagePath": "buildMultiTargeting\\A1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.A1.props",
+      "PackagePath": "buildTransitive\\A1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

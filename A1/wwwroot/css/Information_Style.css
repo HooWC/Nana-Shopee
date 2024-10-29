@@ -1,0 +1,265 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+
+.bp {
+    background: url(../Img/pfnl/background.png) no-repeat;
+    background-size: cover;
+}
+
+.i_header {
+    position: relative;
+    user-select: none;
+}
+
+    .i_header img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .i_header div {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+
+/*========================================================*/
+
+.main_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+    .main_box .box {
+        width: 80rem;
+        height: 455px;
+        background: rgba(0,0,0,0.55);
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        box-shadow: 0 0 20px white, 0 0 60px white;
+    }
+
+        .main_box .box .left {
+            flex: 30%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .main_box .box .left img {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0 0 20px #777, 0 0 60px #777;
+            }
+
+        .main_box .box .right {
+            flex: 70%;
+            padding: 1rem;
+        }
+
+            .main_box .box .right .header {
+                text-align: center;
+            }
+
+                .main_box .box .right .header h6 {
+                    font-size: 2rem;
+                    color: white;
+                    margin-bottom: 0.5rem;
+                }
+
+            .main_box .box .right .gmail {
+                text-align: center;
+            }
+
+                .main_box .box .right .gmail h6 {
+                    font-size: 1.4rem;
+                    color: white;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.7rem;
+                }
+
+            .main_box .box .right .m_box {
+                display: flex;
+                padding: 1rem;
+            }
+
+                .main_box .box .right .m_box .m_left {
+                    flex: 50%;
+                }
+
+                    .main_box .box .right .m_box .m_left p,
+                    .main_box .box .right .m_box .m_right p {
+                        margin-bottom: 2rem;
+                    }
+
+                    .main_box .box .right .m_box .m_left .s1,
+                    .main_box .box .right .m_box .m_right .s1 {
+                        padding: 10px 15px;
+                        background: steelblue;
+                        color: white;
+                        border-radius: 10px;
+                        border: none;
+                        box-shadow: 0 0 20px darkblue, 0 0 60px darkblue;
+                        margin-right: 0.5rem;
+                    }
+
+                    /*.main_box .box .right .m_box .m_left .s1:hover,
+                        .main_box .box .right .m_box .m_right .s1:hover {*/
+                    /*box-shadow: 0 0 20px white, 0 0 60px white;*/
+                    /*}*/
+
+                    .main_box .box .right .m_box .m_left .s2,
+                    .main_box .box .right .m_box .m_right .s2 {
+                        padding: 10px 15px;
+                        color: white;
+                    }
+
+                .main_box .box .right .m_box .m_right {
+                    flex: 50%;
+                }
+
+            .main_box .box .right .out {
+                text-align: right;
+            }
+
+                .main_box .box .right .out a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 10px 2rem;
+                    border-radius: 10px;
+                    background: salmon;
+                    box-shadow: 0 0 20px salmon, 0 0 60px salmon;
+                    transition: all 0.2s;
+                }
+
+                    .main_box .box .right .out a:hover {
+                        color: black;
+                    }
+
+@media screen and (max-width: 376px) {
+
+    .i_header img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 120vh;
+    }
+
+    .i_header div {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 120vh;
+    }
+
+    .main_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        user-select: none;
+    }
+
+        .main_box .box {
+            width: 360px;
+            height: 700px;
+            background: rgba(0,0,0,0.55);
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+            margin-top: 5rem;
+            box-shadow: 0 0 20px white, 0 0 60px white;
+        }
+
+            .main_box .box .left {
+                flex: 30%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .main_box .box .left img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    box-shadow: 0 0 20px #777, 0 0 60px #777;
+                }
+
+            .main_box .box .right {
+                flex: 70%;
+                padding: 0.2rem;
+                width: 310px;
+            }
+
+                .main_box .box .right .header {
+                    text-align: center;
+                }
+
+                    .main_box .box .right .header h6 {
+                        font-size: 1.4rem;
+                        color: white;
+                        margin-bottom: 0.5rem;
+                    }
+
+                .main_box .box .right .gmail {
+                    text-align: center;
+                }
+
+                    .main_box .box .right .gmail h6 {
+                        font-size: 1rem;
+                        color: white;
+                        margin-top: 0.5rem;
+                        margin-bottom: 1.7rem;
+                    }
+
+                .main_box .box .right .m_box {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                }
+
+                    .main_box .box .right .m_box .m_left {
+                        flex: 50%;
+                    }
+
+                        .main_box .box .right .m_box .m_left p,
+                        .main_box .box .right .m_box .m_right p {
+                            margin-bottom: 2rem;
+                        }
+
+                        .main_box .box .right .m_box .m_left .s1,
+                        .main_box .box .right .m_box .m_right .s1 {
+                            padding: 10px 15px;
+                            background: steelblue;
+                            color: white;
+                            font-size: 0.3rem;
+                            border-radius: 10px;
+                            border: none;
+                            box-shadow: 0 0 20px darkblue, 0 0 60px darkblue;
+                            margin-right: 0.5rem;
+                        }
+
+                        .main_box .box .right .m_box .m_left .s2,
+                        .main_box .box .right .m_box .m_right .s2 {
+                            padding: 10px 15px;
+                            font-size: 0.3rem;
+                            color: white;
+                        }
+}

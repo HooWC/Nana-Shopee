@@ -1,0 +1,221 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = A1
+build_property.RootNamespace = A1
+build_property.ProjectDir = E:\作品\Nana Shopee\A1\A1\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\作品\Nana Shopee\A1\A1
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/HistoryDetails/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeURldGFpbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/AddPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxBZGRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxBZGRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/BuyPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxCdXlQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/CardNumb.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxDYXJkTnVtYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/Com.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxDb20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxIaXN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/Information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxJbmZvcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/LoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxMb2dpblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/MasterEditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxNYXN0ZXJFZGl0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/MasterEditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxNYXN0ZXJFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/MasterHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxNYXN0ZXJIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/MasterInfoUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxNYXN0ZXJJbmZvVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/MasterProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxNYXN0ZXJQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/MasterProductInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxNYXN0ZXJQcm9kdWN0SW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/MasterUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxNYXN0ZXJVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/OldMaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxPbGRNYXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/ProductPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxQcm9kdWN0UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/ShoppingCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxTaG9wcGluZ0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MyHomePage/SignUpPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlIb21lUGFnZVxTaWduVXBQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MySetting/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlTZXR0aW5nXENvbnRhY3RVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/MySetting/Setting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlTZXR0aW5nXFNldHRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Card_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENhcmRfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Comment_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbW1lbnRfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/ContactUs_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbnRhY3RVc19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/HistoryDetails_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhpc3RvcnlEZXRhaWxzX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Information_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluZm9ybWF0aW9uX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Login_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Master_layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hc3Rlcl9sYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/OldMaster_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE9sZE1hc3Rlcl9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Setting_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNldHRpbmdfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/SignUp_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZ25VcF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Success_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFN1Y2Nlc3NfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/Wait_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFdhaXRfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/SuccessPage/SuccessBuy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VjY2Vzc1BhZ2VcU3VjY2Vzc0J1eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Waiting/Wait.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FpdGluZ1xXYWl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Waiting/WaitHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FpdGluZ1xXYWl0SGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Waiting/WaitProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FpdGluZ1xXYWl0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Waiting/WaitSetting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FpdGluZ1xXYWl0U2V0dGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Waiting/WaitShoppingCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FpdGluZ1xXYWl0U2hvcHBpbmdDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/作品/Nana Shopee/A1/A1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-imd1x6cz1r

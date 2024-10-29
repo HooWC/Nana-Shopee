@@ -1,0 +1,182 @@
+﻿@model IEnumerable<Tr>
+
+@{
+	ViewData["Title"] = "History";
+}
+
+@{
+	int num = 1;
+}
+
+@{
+	ViewBag.table_pd = "table-dark table-hover";
+	if (@ViewBag.background == "black")
+	{
+		ViewBag.h1 = "H_right_black";
+		ViewBag.table_pd = "table-primary";
+	}
+}
+
+<div class="m_box" style="@ViewBag.display">
+	<div class="m2_box">
+		<div class="m3_box">
+			<div class="icon">
+				<a asp-controller="MyHomePage" asp-action="History" asp-route-block="none"><i class="fas fa-times"></i></a>
+			</div>
+			<div class="context">
+				<h1 style="color:black;">Recharge</h1>
+			</div>
+
+			<div class="info">
+				<form action="~/MyHomePage/AddMoney" method="post">
+					<div class="input-group mb-3 sx">
+						<span class="input-group-text" id="basic-addon1"><i class="fas fa-dollar-sign"></i></span>
+						<input type="number" name="money" class="form-control" placeholder="Money" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+
+					<div class="input-group mb-3 sx3">
+						<span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-credit-card"></i></span>
+						<input maxlength="16" type="text" name="card" class="form-control" placeholder="Card Number" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+
+					<div class="input-group mb-3 sx2">
+						<span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+						<input type="password" name="n1" class="form-control" placeholder="You Password" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<input type="submit" class="btn btn-outline-dark py-3 px-5 offset-md-3 sbtn" value="Confirm" />
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="cart_title">
+	<h1>Purchase History</h1>
+</div>
+
+<div class='navbar__nav'>
+</div>
+
+<div class='H_container'>
+
+
+	<section class='H_left'>
+		<a class="name" asp-controller="MyHomePage" asp-action="Information" asp-route-id="@ViewBag.ID">
+			<h3 class="h_3">@ViewBag.Name</h3>
+		</a>
+
+		<div class="user_icon">
+
+			<form action="~/MyHomePage/History" enctype="multipart/form-data" method="post">
+
+				<input id="myIcon" type="file" name="file" onchange="chooseImg(this)">
+				<i class="fa-solid fa-user"></i>
+				<img id="img" src="~/Img/TX/@ViewBag.Hurl" onclick="myIcon.click()">
+				<input id="sub" type="submit" value="Update Avatar">
+
+			</form>
+
+			<form action="~/MyHomePage/LoginPage" method="post">
+				<input id="so" type="submit" value="Sign Out" name="signout">
+			</form>
+
+		</div>
+
+		<div class="RM">
+			<div class="mo2">
+				<a asp-controller="MyHomePage" asp-action="History" asp-route-block="block"><p class="icon"><i style="color: white;" class="fas fa-plus-circle"></i></p></a>
+				<p class="mo">RM <span>@(ViewBag.money.ToString("0.00"))</span></p>
+			</div>
+		</div>
+
+	</section>
+
+	<section class='H_right @ViewBag.h1'>
+		<div class="cart_box">
+			<table class="table @ViewBag.table_pd t2">
+				<thead>
+					<tr>
+						<th>
+							No.
+						</th>
+						<th>
+							Total Price
+						</th>
+						<th>
+							PaidTime
+						</th>
+						<th>
+							View Details
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					@foreach (var i in Model)
+					{
+						if (@i.Id == 0)
+						{
+							<tr>
+								<td>
+									<h6>No Data</h6>
+								</td>
+								<td>
+									<h6>No Data</h6>
+								</td>
+								<td>
+									<h6>No Data</h6>
+								</td>
+								<td>
+									<h6>No Data</h6>
+								</td>
+							</tr>
+						}
+						else
+						{
+							if (@i.PaidTime == "Not Yet Update")
+							{
+								<tr>
+									<td>
+										@(num++)
+									</td>
+									<td>
+										<h6>RM @i.GrandTotal</h6>
+									</td>
+									<td>
+										<h6>@i.PaidTime</h6>
+									</td>
+									<td>
+									</td>
+								</tr>
+							}
+							else
+							{
+								<tr>
+									<td>
+										@(num++)
+									</td>
+									<td>
+										<h6>RM @i.GrandTotal</h6>
+									</td>
+									<td>
+										<h6>@i.PaidTime</h6>
+									</td>
+									<td>
+										<a class="view" asp-controller="HistoryDetails" asp-action="Details" asp-route-id="@i.Id">View</a>
+									</td>
+								</tr>
+							}
+
+
+						}
+					}
+				</tbody>
+
+			</table>
+		</div>
+	</section>
+</div>
+
+<script>
+	document.getElementById("history").style.background = "cornflowerblue"
+</script>

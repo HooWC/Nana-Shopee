@@ -1,0 +1,131 @@
+﻿@model IEnumerable<User>
+
+@{
+	ViewData["Title"] = "MasterUser";
+	Layout = "Master_layout";
+}
+
+@{
+	int num = 1;
+}
+<section class="flex_box">
+
+	<div class="left">
+
+		<div class="p_header">
+			<form action="~/MyHomePage/MasterUser" method="post">
+				<input class="search2" type="text" placeholder="Search User..." name="search" />
+				<button type="submit" class="bbtt"><i class="fas fa-search"></i></button>
+			</form>
+		</div>
+
+		@foreach (var i in Model)
+		{
+			<div class="f_box">
+				<a asp-controller="MyHomePage" asp-action="MasterInfoUser" asp-route-id="@i.Id">
+					<img src="~/Img/TX/@i.Hurl" alt="" />
+					<div class="cs">
+						<h6 style="margin-bottom:0.7rem;">
+							@i.UserName
+						</h6>
+						<p><span class="spa">RM @(i.Money.ToString("0.00")) </span></p>
+					</div>
+				</a>
+			</div>
+		}
+	</div>
+
+	<div class="right">
+		<div class="right_box">
+			<div class="icon">
+				<i class="fa-solid fa-award"></i>
+			</div>
+
+			@foreach (var i in Model.OrderByDescending(x => x.OutMoney).ThenBy(x => x.Id))
+			{
+				<div class="bo">
+					<div class="rank">
+						@if (num == 1)
+						{
+							<span class="s1" style="color:gold;font-size:1rem;"><i class="fa-solid fa-trophy"></i></span>
+							<span style="color:gold;font-size:1rem;">@i.UserName</span>
+							<span style="color:gold;font-size:1rem;">@(i.OutMoney.ToString("0.00"))</span>
+							{
+								num++;
+							}
+						}
+						else if (num == 2)
+						{
+							<span style="color:turquoise;font-size:1rem;"><i class="fa-solid fa-medal"></i></span>
+							<span style="color:turquoise;font-size:1rem;">@i.UserName</span>
+							<span style="color:turquoise;font-size:1rem;">@(i.OutMoney.ToString("0.00"))</span>
+							{
+								num++;
+							}
+						}
+						else if (num == 3)
+						{
+							<span style="color:pink;font-size:1rem;"><i class="fa-solid fa-medal"></i></span>
+							<span style="color:pink;font-size:1rem;">@i.UserName</span>
+							<span style="color:pink;font-size:1rem;">@(i.OutMoney.ToString("0.00"))</span>
+							{
+								num++;
+							}
+						}
+						else
+						{
+							<span class="n1">@(num++)</span>
+							<span class="n2">@i.UserName</span>
+							<span class="n3">@(i.OutMoney.ToString("0.00"))</span>
+						}
+
+					</div>
+					<hr style="margin-bottom:1rem;width:85%;margin:0 auto 1rem auto;" />
+				</div>
+
+			}
+
+
+		</div>
+	</div>
+
+
+</section>
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@ViewBag.Mas_id">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="AddPage">
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class='text'>Sign Out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>

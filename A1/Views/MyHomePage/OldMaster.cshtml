@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Master>
+
+@{
+	ViewData["Title"] = "OldMaster";
+	Layout = "OldMaster_Layout";
+}
+
+
+@{
+	int num = 1;
+}
+
+
+<section>
+	<div class='box'>
+		<h3>Welcome Master</h3>
+
+		@foreach (var i in Model)
+		{
+			<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@i.Id" class='list'>
+				<div class='imgBx'>
+					<img src="~/@i.Img" alt=''>
+				</div>
+				<div class='content'>
+					<h2 class='rank'><small>#</small>@(num++)</h2>
+					<h4>@i.Info</h4>
+					<p style="font-size:0.5rem;">@i.Mas</p>
+				</div>
+			</a>
+		}
+
+	</div>
+</section>
+

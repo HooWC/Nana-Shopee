@@ -1,0 +1,78 @@
+﻿@{
+	ViewData["Title"] = "AddPage";
+	Layout = "Master_layout";
+}
+
+<div class="mas_header cv">
+
+	<div class="bp">
+	</div>
+
+</div>
+
+
+
+<div class="mas_main">
+	<div class="mas_box ma_cc">
+		<div class="container cc">
+
+			<section class="left2">
+				<a style="text-decoration:none;" href="~/MyHomePage/AddUser"><i class="fa-solid fa-users"></i>User</a>
+			</section>
+
+			<section class="right2">
+				<a style="text-decoration:none;" href="~/MyHomePage/AddProduct"><i class="fa-brands fa-product-hunt"></i>Product</a>
+			</section>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='move'>
+	<div class='box'>
+		<ul>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterHome" asp-route-id="@ViewBag.Mas_id">
+					<span class='icon'><ion-icon name="home-outline"></ion-icon></span>
+					<span class='text'>Home</span>
+				</a>
+			</li>
+			<li class='list '>
+				<a asp-controller="MyHomePage" asp-action="MasterUser">
+					<span class='icon'><ion-icon name="person-outline"></ion-icon></span>
+					<span class='text'>User</span>
+				</a>
+			</li>
+			<li asp-controller="MyHomePage" asp-action="MasterProduct">
+				<a asp-controller="MyHomePage" asp-action="MasterProduct">
+					<span class='icon'><ion-icon name="cube"></ion-icon></span>
+					<span class='text'>Product</span>
+				</a>
+			</li>
+			<li class='list active'>
+				<a asp-controller="MyHomePage" asp-action="AddPage">
+					<span class='icon'><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class='text'>Add</span>
+				</a>
+			</li>
+			<li class='list'>
+				<a asp-controller="MyHomePage" asp-action="LoginPage" asp-route-clear="true">
+					<span class='icon'><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class='text'>Sign Out</span>
+				</a>
+			</li>
+			<div class='info'></div>
+		</ul>
+	</div>
+</div>

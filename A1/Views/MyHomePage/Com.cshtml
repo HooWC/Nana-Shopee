@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Comment>
+
+@{
+	ViewData["Title"] = "Com";
+	Layout = "Comment_Layout";
+}
+
+
+
+<div class="container play-container">
+
+
+
+	<div class="row">
+
+		<div class="play-video">
+
+
+			@if (@ViewBag.src == "no")
+			{
+				<div class="mig">
+					<img src="~/@ViewBag.img" alt="" />
+				</div>
+
+			}
+			else
+			{@*width="1100" height="500"*@
+				<iframe src="@ViewBag.src"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			}
+
+
+
+			<h3 style="color:white;">@ViewBag.Pname</h3>
+			<div class="play-video-info">
+				<div>
+					@if (@ViewBag.good == 0)
+					{
+						<a asp-controller="MyHomePage" asp-action="AddGoodVideo" asp-route-gb="+" asp-route-id="@ViewBag.pid" style="color:white;"><i class="fa-solid fa-thumbs-up"></i>@ViewBag.good</a>
+					}
+					else
+					{
+						<a asp-controller="MyHomePage" asp-action="AddGoodVideo" asp-route-gb="+" asp-route-id="@ViewBag.pid"><i class="fa-solid fa-thumbs-up"></i>@ViewBag.good</a>
+					}
+					@if (@ViewBag.bad == 0)
+					{
+						<a asp-controller="MyHomePage" asp-action="AddGoodVideo" asp-route-gb="-" asp-route-id="@ViewBag.pid" style="color:white;"><i class="fa-solid fa-thumbs-down"></i>@ViewBag.bad</a>
+					}
+					else
+					{
+						<a asp-controller="MyHomePage" asp-action="AddGoodVideo" asp-route-gb="-" asp-route-id="@ViewBag.pid"><i class="fa-solid fa-thumbs-down"></i>@ViewBag.bad</a>
+					}
+					<a class="bbtt" href="~/MyHomePage/BuyPage?id=@ViewBag.pid">Back</a>
+				</div>
+			</div>
+			<hr>
+
+			<div class="plublisher">
+				<img src="~/@ViewBag.masimg">
+				<div>
+					<p style="color:white;">@ViewBag.masname</p>
+				</div>
+			</div>
+
+
+			<div class="vid-description">
+				<p style="color:rgb(203, 190, 190)">@ViewBag.info</p>
+				<hr>
+				<h4 style="color:white;">@ViewBag.count Comments</h4>
+			</div>
+
+			<div class="add-comment">
+				<img src="~/Img/TX/@ViewBag.uhurl">
+				<form action="~/MyHomePage/AddComment?uid=@ViewBag.uid&&pid=@ViewBag.pid" method="post">
+					<div class="nm">
+						<input class="in" id="inp" type="text" placeholder="Write somethins" name="com">
+						<input class="ctn" type="submit" value="submit" />
+					</div>
+
+				</form>
+			</div>
+
+			<div id="main" class="old-comment">
+
+				<ul id="ul">
+
+					@foreach (var i in Model.OrderByDescending(x => x.Id))
+					{
+						<li>
+							<img class="img" src="~/Img/TX/@i.Head">
+							<div>
+								<h3 style="color:white;">@i.UserName <span style="color:white;">@i.CreatedDate</span></h3>
+								<p class="text" style="color:white;">@i.comment</p>
+								<div class="acomment-action">
+									<a class="n1" asp-controller="MyHomePage" asp-action="AddComment" asp-route-gb="+" asp-route-id="@ViewBag.pid" asp-route-comid="@i.Id">
+										<i class="fa-solid fa-thumbs-up"></i>
+										@if (i.Good == 0)
+										{
+											<span>@i.Good</span>
+										}
+										else
+										{
+											<span style="color:gold">@i.Good</span>
+										}
+
+									</a>
+									<a class="n1" asp-controller="MyHomePage" asp-action="AddComment" asp-route-gb="-" asp-route-id="@ViewBag.pid" asp-route-comid="@i.Id">
+										<i class="fa-solid fa-thumbs-down"></i>
+										@if (i.Bad == 0)
+										{
+											<span>@i.Bad</span>
+										}
+										else
+										{
+											<span style="color:gold">@i.Bad</span>
+										}
+
+									</a>
+
+									@if (i.User_Id == ViewBag.uid)
+									{
+										<a id="aaa" asp-controller="MyHomePage" asp-action="DelComment" asp-route-id="@ViewBag.pid" asp-route-comid="@i.Id">DELETE</a>
+									}
+
+								</div>
+							</div>
+						</li>
+					}
+
+
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,160 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.bp {
+    background: url(../Img/back1.png) no-repeat;
+    background-size: cover;
+}
+
+.login_header {
+    position: relative;
+    user-select: none;
+}
+
+    .login_header img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login_header div {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+
+.login_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0,0,0,0.68);
+    user-select: none;
+}
+
+    .login_main .sign_box {
+        width: 75rem;
+        border-radius: 10px;
+        background: red;
+        background: rgba(0,0,0,0.55);
+        box-shadow: 0 0 20px white, 0 0 60px white;
+    }
+
+
+
+/*========================================*/
+
+
+.sg_container {
+    padding: 2rem 8rem;
+    user-select: none;
+}
+
+    .sg_container h1 {
+        padding-bottom: 2rem;
+    }
+
+    .sg_container h5, h1 {
+        color: white;
+    }
+
+    .sg_container h5 {
+        padding-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .sg_container input {
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        transition: all 0.3s;
+    }
+
+    .sg_container .spa {
+        color: gold;
+        display: block;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .sg_container br {
+        margin-bottom: 9rem;
+    }
+
+    .sg_container input:focus {
+        color: black;
+        box-shadow: 0 0 20px lightseagreen, 0 0 60px lightseagreen;
+    }
+
+    .sg_container select {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        border-radius: 3px;
+        color: black;
+        font-weight: 600;
+    }
+
+        .sg_container select:focus {
+            box-shadow: 0 0 20px lightseagreen, 0 0 60px lightseagreen;
+        }
+
+
+@media screen and (max-width: 376px) {
+    .sg_container .sg {
+        display: flex;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .sg_container input {
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px 20px;
+        font-size: 0.5rem;
+        transition: all 0.3s;
+    }
+
+    .sg_container h5 {
+        padding-bottom: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .sg_container br {
+        margin-bottom: 5rem;
+    }
+
+    .sg_container .sg .col {
+        margin-bottom: 0.5rem;
+    }
+
+    .sg_container select {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 5px 20px;
+        margin-bottom: 2rem;
+        font-size: 0.2rem;
+        border-radius: 3px;
+        color: black;
+        font-weight: 600;
+    }
+
+    .sg_container .sg .col .sb_btn {
+        font-size: 1rem;
+    }
+}
